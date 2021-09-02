@@ -181,3 +181,38 @@ input:checked+.slider:before {
     align-items: center;
     flex-flow: column;
 }
+
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .appSectionTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .appMenuTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .appMenuText {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .appSectionTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .appMenuTitle {
+        font-size: 16px;
+    }
+
+    .appMenuText {
+        font-size: 16px;
+    }
+}

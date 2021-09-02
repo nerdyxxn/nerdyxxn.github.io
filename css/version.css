@@ -81,6 +81,46 @@
     border: 0;
     border-radius: 35px;
     width: 25%;
-    height: 60px;
+    height: 50px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .verSectionTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .verMenuTitle {
+        font-size: 18px;
+    }
+
+    .verMenuItems2 {
+        font-size: 18px;
+    }
+
+    .update_text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .verSectionTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .verMenuTitle {
+        font-size: 16px;
+    }
+
+    .verMenuItems2 {
+        font-size: 16px;
+    }
+
+    .update_text {
+        font-size: 16px;
+    }
 }

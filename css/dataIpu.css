@@ -113,7 +113,7 @@ ul.tabs li.current {
     display: flex;
     justify-content: flex-end;
     grid-column: 1 / span 3;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* 탭 메뉴 - 영상 CSS */
@@ -205,7 +205,7 @@ ul.tabs li.current {
         display: flex;
         justify-content: flex-end;
         grid-column: 1 / span 2;
-        padding: 20px;
+        padding: 15px;
     }
 }
 
@@ -246,6 +246,6 @@ ul.tabs li.current {
         display: flex;
         justify-content: flex-end;
         grid-column: auto;
-        padding: 20px;
+        padding: 15px;
     }
 }

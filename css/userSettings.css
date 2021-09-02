@@ -39,8 +39,8 @@
 
 .userMode_section2_user {
     background-color: white;
-    /* height: 68%; */
-    height: 100%;
+    height: 62%;
+    /* height: 100%; */
 }
 
 .userTitle {
@@ -132,6 +132,11 @@
     .userModeTitle {
         font-size: 24px;
         font-weight: 500;
+    }
+
+    .userMode_section2_user {
+        background-color: white;
+        height: 100%;
     }
 }
 

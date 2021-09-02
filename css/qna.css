@@ -1,6 +1,6 @@
 #contaniner {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -225,3 +225,46 @@
     margin: 0 20px 0 20px;
 }
 
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .qnaMode_section2 {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-rows: auto;
+        min-height: 0;
+        min-width: 0;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 3%;
+    }
+
+    .qnaModeTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .qnaMenuTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .qnaMenuText {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .qnaModeTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .qnaMenuText {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}

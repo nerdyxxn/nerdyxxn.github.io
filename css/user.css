@@ -1,6 +1,6 @@
 #contaniner {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -278,6 +278,16 @@ input:checked+.slider:before {
         font-size: 24px;
         font-weight: 500;
     }
+
+    .appMenuTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .appMenuText {
+        font-size: 18px;
+        padding-left: 15px;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -288,5 +298,10 @@ input:checked+.slider:before {
 
     .user_section2_menu {
         height: 100%;
+    }
+
+    .appMenuText {
+        font-size: 16px;
+        padding-left: 15px;
     }
 }

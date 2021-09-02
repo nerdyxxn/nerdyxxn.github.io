@@ -108,7 +108,7 @@
 
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .addDevice>img {
@@ -224,22 +224,32 @@
     .logo>a>img {
         width: 80%;
     }
-    #buttonSos > img {
+
+    #buttonSos>img {
         width: 100%;
         vertical-align: middle;
     }
+
     .sos_text {
         font-size: 22px;
         font-weight: 500;
         line-height: 10px;
     }
+
     .addDeviceText {
         display: none;
+    }
+    #buttonAddDevice>img {
+        width: 60%;
     }
 }
 
 @media screen and (max-width : 768px) {
     .logo>a>img {
         width: 70%;
+    }
+
+    #buttonAddDevice>img {
+        width: 50%;
     }
 }

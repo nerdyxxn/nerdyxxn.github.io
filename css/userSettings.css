@@ -103,6 +103,7 @@
     font-size: 16px;
     text-align: center;
     font-weight: 400;
+    background-color: #EFEFEF;
 }
 
 /* ========================= section 3 ========================= */
@@ -157,5 +158,15 @@
         font-size: 18px;
         font-weight: 400;
         padding: 20px 40px 20px 40px;
+    }
+
+    .userContentText {
+        padding-right: 4%;
+        font-size: 16px;
+    }
+
+    #buttonModify {
+        width: 100px;
+        font-size: 14px;
     }
 }

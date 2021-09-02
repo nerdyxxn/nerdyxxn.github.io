@@ -142,8 +142,11 @@
     background: #F4F3F8;
     color: #595959;
     border-radius: 25px;
-    box-shadow: inset 2px 2px 5px #BABECC,
-        inset -5px -5px 10px #ffffff73;
+
+        box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+        -webkit-appearance: none;
+        -moz-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+        -webkit-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
 }
 
 .field input:focus {

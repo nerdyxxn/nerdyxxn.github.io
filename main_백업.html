@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B01 메인</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <!-- JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 슬라이드 메뉴바 START -->
+    <aside class="sidebar">
+        <div class="side-inner">
+            <div class="slideLogo">
+                <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
+            </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-item"><a href="userSettings.html" class="sidebar-anchor">사용자 설정</a></li>
+                    <li class="sidebar-item"><a href="wifiSettings.html" class="sidebar-anchor">Wifi 설정</a></li>
+                    <li class="sidebar-item"><a href="dataIpu.html" class="sidebar-anchor">기록관리</a></li>
+                    <li class="sidebar-item"><a href="csCenter.html" class="sidebar-anchor">고객센터</a></li>
+                </ul>
+        </div>
+    </aside>
+    <!-- //슬라이드 메뉴바 END -->
+
+    <main>
+        <div id="contaniner">
+            <div class="main_section1">
+                <div class="emptyLogo"></div>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
+                </div>
+                <div class="toggle">
+                    <a href="#" class="js-menu-toggle menu-toggle">
+                        <span class="icon-align-right text-black"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="main_section2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel01.png" class="d-block w-100" alt="carousel01">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel02.png" class="d-block w-100" alt="carousel02">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel03.png" class="d-block w-100" alt="carousel03">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="main_section3">
+                <div class="addDevice">
+                    <img src="img/deviceFrame.png">
+                    <!-- Button trigger modal -->
+                    <button id="buttonAddDevice" type="button" class="btn btn-primary addDeviceItems" data-toggle="modal"
+                        data-target="#exampleModalCenterAdd">
+                        <img src="img/addDevice.png" alt="">
+                    </button>
+                    <!-- 제품 추가 Modal -->
+                    <div class="modal fade" id="exampleModalCenterAdd" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLongTitle">모드 선택</p>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="userModeSettings.html" class="mode_Items">사용자<br>모드</a>
+                                    <a href="#" class="mode_Items">보호자<br>모드</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="addDeviceButton">
+                    <a href="#.html"><img src="img/deviceButton01.png" alt=""></a>
+                    <a href="#.html"><img src="img/deviceButton02.png" alt=""></a>
+                    <span class="addDeviceText">IPU CAM</span>
+                    <a href="#.html"><img src="img/deviceButton03.png" alt=""></a>
+                    <a href="#.html"><img src="img/deviceButton04.png" alt=""></a>
+                </div>
+            </div>
+            <div class="main_section4">
+                <div class="sosButton">
+                    <!-- Button trigger modal -->
+                    <button id="buttonSos" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalCenterSOS">
+                        <img src="img/sosButton.png" alt="">
+                        <p class="sos_text">SOS</p>
+                    </button>
+                    <!-- SOS Modal -->
+                    <div class="modal fade" id="exampleModalCenterSOS" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLongTitle">SOS</p>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="#" class="mode_Items">센터<br>연결</a>
+                                    <a href="#" class="mode_Items">보호자<br>연결</a>
+                                    <a href="#" class="mode_Items">112<br>연결</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

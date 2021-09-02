@@ -1,0 +1,193 @@
+#contaniner {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+    flex-flow: column;
+}
+
+/* ========================= section 1 ========================= */
+.app_section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 5% 10% 5% 10%;
+}
+
+.appSectionTitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ========================= section 2 ========================= */
+.app_section2 {
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.app_section2_user {
+    width: 100%;
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.appMenuItems1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3% 2% 1%;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size:20px;
+}
+
+.appMenuText {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.appMenuItems2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.appMenuItems3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.appMenuItems4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+/* ========================= switch CSS ========================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+}
+
+input:focus+.slider {
+    box-shadow: 0;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ========================= section 3 ========================= */
+.user_section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .appSectionTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .appMenuItems1 {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    .appMenuText {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .appSectionTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .appMenuItems1 {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+    .appMenuText {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}

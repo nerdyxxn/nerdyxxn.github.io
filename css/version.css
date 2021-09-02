@@ -1,0 +1,86 @@
+#contaniner {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+    flex-flow: column;
+}
+
+/* ========================= section 1 ========================= */
+.ver_section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 5% 10% 5% 10%;
+}
+
+.verSectionTitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ========================= section 2 ========================= */
+.ver_section2 {
+    display: flex;
+    justify-content: center;
+    /* justify-items: center; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.ver_section2_user {
+    width: 100%;
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verMenuItems1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3% 2% 1%;
+    font-size: 20px;
+}
+
+.verMenuTitle {
+    font-weight: 800;
+}
+
+.verMenuItems2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    font-size: 20px;
+    align-items: center;
+}
+
+.verMenuItems3 {
+    display: flex;
+    justify-content: center;
+    padding: 2% 3% 2% 2%;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* update button */
+#buttonUpdate {
+    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+    color: #fff;
+    border: 0;
+    border-radius: 35px;
+    width: 25%;
+    height: 60px;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .menuBtn {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 1;
+            background-image: url("https://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/menu.png");
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .close {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 1;
+            background-image: url("https://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png");
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        #menu {
+            width: 150px;
+            height: 100%;
+            position: fixed;
+            top: 0px;
+            right: -152px;
+            z-index: 10;
+            border: 1px solid #c9c9c9;
+            background-color: white;
+            text-align: center;
+            transition: All 0.2s ease;
+            -webkit-transition: All 0.2s ease;
+            -moz-transition: All 0.2s ease;
+            -o-transition: All 0.2s ease;
+        }
+
+        #menu.open {
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="close"></div>
+    </div>
+    <div class="menuBtn"> </div>
+    <script>
+        $(".menuBtn").click(function () {
+            $("#menu").addClass("open");
+        });
+        $(".close").click(function () {
+            $("#menu").removeClass("open");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D03 Wifi 설정</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/wifiSettings.css" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <!-- JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 슬라이드 메뉴바 START -->
+    <aside class="sidebar">
+        <div class="side-inner">
+            <div class="slideLogo">
+                <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="userSettings.html" class="sidebar-anchor">사용자 설정</a></li>
+                <li class="sidebar-item"><a href="wifiSettings.html" class="sidebar-anchor">Wifi 설정</a></li>
+                <li class="sidebar-item"><a href="dataIpu.html" class="sidebar-anchor">기록관리</a></li>
+                <li class="sidebar-item"><a href="csCenter.html" class="sidebar-anchor">고객센터</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- //슬라이드 메뉴바 END -->
+
+    <main>
+        <div id="contaniner">
+            <div class="wifiMode_section1">
+                <div class="emptyLogo"></div>
+                <div class="wifiModeTitle">
+                    Wifi 설정
+                </div>
+                <div class="toggle">
+                    <a href="#" class="js-menu-toggle menu-toggle">
+                        <span class="icon-align-right text-black"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="wifiMode_section2">
+                <div class="wifiMode_section2_nw1">
+                    <div class="wifiTitle">
+                        <p>현재 네트워크</p>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="wifiContent">
+                        <div class="wifiContentItems">
+                            <div>
+                                <span class="icon-wifi"></span>
+                                <span class="appMenuText">padiem</span>
+                            </div>
+                            <p>연결됨</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wifiMode_section2_nw2">
+                    <div class="wifiTitle">
+                        <p>사용 가능한 네트워크</p>
+                    </div>
+                    <div class="wifiContent">
+                        <div class="wifiContentItems">
+                            <div>
+                                <span class="icon-wifi"></span>
+                                <span class="appMenuText">padiem 2</span>
+                            </div>
+                        </div>
+                        <div class="wifiContentItems">
+                            <div>
+                                <span class="icon-wifi_lock"></span>
+                                <span class="appMenuText">han_test</span>
+                            </div>
+                        </div>
+                        <div class="wifiContentItems">
+                            <div>
+                                <span class="icon-plus"></span>
+                                <span class="appMenuText">추가 네트워크</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

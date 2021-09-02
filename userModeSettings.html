@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B03 사용자모드설정</title>
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/userModeSettings.css" />
+    <!-- JS -->
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="contaniner">
+
+        <div class="userMode_section1">
+            <div class="userModeTitle">
+                사용자 모드 설정
+            </div>
+        </div>
+        <div class="userMode_section2">
+            <div class="userMode_section2_device">
+                <p class="userTitle">기기 ID 설정</p>
+                <div class="userInput">
+                    <form action="#">
+                        <div class="field">
+                            <input type="text" required placeholder="메시지를 입력하세요">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="userMode_section2_wifi">
+                <p class="userTitle">Wifi 설정</p>
+                <div class="userInputWifi">
+                    <form action="#">
+                        <div class="field">
+                            <p>ID</p>
+                            <input type="text" required placeholder="아이디를 입력하세요">
+                        </div>
+                        <div class="field">
+                            <p>PW</p>
+                            <input type="password" required placeholder="비밀번호를 입력하세요">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="userMode_section3">
+            <div class="addDevice_items">
+                <button id="buttonAddDevice" type="button" class="btn btn-primary btn-lg" onclick="location.href='addDeviceAfter.html'">
+                    <p class="login_text">기기 추가</p>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

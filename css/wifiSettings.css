@@ -1,0 +1,196 @@
+#contaniner {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+    flex-flow: column;
+}
+
+/* ========================= section 1 ========================= */
+.wifiMode_section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 10% 5% 10%;
+}
+
+.wifiModeTitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ========================= section 2 ========================= */
+.wifiMode_section2 {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    min-height: 0;
+    min-width: 0;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center; */
+    /* margin: 0px 200px 80px 200px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.wifiMode_section2_nw1 {
+    background-color: white;
+    height: 50%;
+}
+
+.wifiMode_section2_nw2 {
+    background-color: white;
+    /* height: 68%; */
+}
+
+.wifiTitle {
+    background: linear-gradient(0.25turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 74px;
+}
+
+.wifiMode_section2_setting {
+    background-color: white;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wifiContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.wifiContentItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4%;
+    font-size: 20px;
+}
+
+.wifiContentText {
+    padding-right: 4%;
+    font-size: 18px;
+}
+
+.appMenuText {
+    padding-left: 10px;
+}
+
+
+/* ========================= switch CSS ========================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+}
+
+input:focus+.slider {
+    box-shadow: 0;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .wifiMode_section2 {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-rows: auto;
+        min-height: 0;
+        min-width: 0;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 3%;
+    }
+
+    .wifiModeTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .wifiContentItems {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .wifiModeTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .wifiTitle {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px 20px 20px 40px;
+        min-height: 74px;
+    }
+
+    .wifiContentItems {
+        font-size: 16px;
+    }
+}

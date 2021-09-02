@@ -1,0 +1,350 @@
+#contaniner {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+    flex-flow: column;
+}
+
+/* ========================= section 1 ========================= */
+.guardMode_section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 5% 10% 5% 10%;
+}
+
+.guardModeTitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ========================= section 2 ========================= */
+.guardMode_section2 {
+    display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-rows: auto;
+	min-height: 0;
+	min-width: 0;
+	grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.guardMode_section2_app {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+}
+
+.guardMode_section2_device1 {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+}
+
+.guardMode_section2_device2 {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appMenuTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.guardTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.guardInput {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.guardInput>form {
+    width: 100%;
+}
+
+.appMenuItems1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3% 2% 1%;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size:20px;
+}
+
+.appMenuText {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.appMenuItems2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.appMenuItems3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.appMenuItems4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.appMenuItems5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3% 2% 2%;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size: 20px;
+    align-items: center;
+}
+
+.guardMode_section2_deviceCont {
+    display: grid;
+	grid-row-gap: 20px;
+	grid-template-rows: auto;
+}
+
+
+/* ========================= switch CSS ========================= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+}
+
+input:focus+.slider {
+    box-shadow: 0;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ========================= section 3 ========================= */
+.guardMode_section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* 기기추가 button */
+.addDevice_items {
+    position: relative;
+}
+
+#buttonAddDevice{
+    border: 0;
+    cursor: pointer;
+}
+
+#buttonAddDevice>img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.addDevice_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+
+/* input text CSS */
+.field {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.field:nth-child(2) {
+    margin-top: 20px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 25px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: #F4F3F8;
+    color: #595959;
+    border-radius: 25px;
+    box-shadow: inset 2px 2px 5px #BABECC,
+        inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC,
+        inset -1px -1px 2px #ffffff73;
+}
+
+.field p {
+    width: 30px;
+    color: #595959;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px;
+    pointer-events: none;
+    color: #666666;
+}
+
+.field input:valid~label {
+    opacity: 0;
+}
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .guardMode_section2 {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        grid-template-rows: auto;
+        min-height: 0;
+        min-width: 0;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 3%;
+    }
+
+    .guardModeTitle {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .appMenuTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .appMenuText {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .guardModeTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .appMenuText {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}

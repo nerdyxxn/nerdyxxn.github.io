@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D02 사용자설정</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/userSettings.css" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <!-- JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- 슬라이드 메뉴바 START -->
+    <aside class="sidebar">
+        <div class="side-inner">
+            <div class="slideLogo">
+                <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="userSettings.html" class="sidebar-anchor">사용자 설정</a></li>
+                <li class="sidebar-item"><a href="wifiSettings.html" class="sidebar-anchor">Wifi 설정</a></li>
+                <li class="sidebar-item"><a href="dataIpu.html" class="sidebar-anchor">기록관리</a></li>
+                <li class="sidebar-item"><a href="csCenter.html" class="sidebar-anchor">고객센터</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!-- //슬라이드 메뉴바 END -->
+
+    <main>
+        <div id="contaniner">
+            <div class="userMode_section1">
+                <div class="emptyLogo"></div>
+                <div class="userModeTitle">
+                    사용자 설정
+                </div>
+                <div class="toggle">
+                    <a href="#" class="js-menu-toggle menu-toggle">
+                        <span class="icon-align-right text-black"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="userMode_section2">
+                <div class="userMode_section2_user">
+                    <div class="userTitle">
+                        <p>사용자 계정</p>
+                    </div>
+                    <div class="userContent">
+                        <div class="userContent1">
+                            <img src="img/userIcon.png" class="userContentText">
+                            <span class="userContentText">ID :</span>
+                            <span class="userContentText">admin</span>
+                        </div>
+                        <div class="userContent2">
+                            <button id="buttonModify" type="button" onclick="location.href='user.html'">
+                                <p class="buttonModify_text">정보수정</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="userMode_section2_setting">
+                    <a href="camSettings.html">
+                        <div class="settingItems">
+                            <p>녹화/카메라 설정</p>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="settingItems">
+                            <p>모션/보이스 감지 설정</p>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </a>
+                    <a href="guardSettings.html">
+                        <div class="settingItems">
+                            <p>보호자 설정</p>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </a>
+                    <a href="nightSettings.html">
+                        <div class="settingItems">
+                            <p>야간모드 설정</p>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </a>
+                    <a href="language.html">
+                        <div class="settingItems">
+                            <p>언어 설정</p>
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="userMode_section3">
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

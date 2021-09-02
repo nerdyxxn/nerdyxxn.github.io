@@ -1,0 +1,227 @@
+#contaniner {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+    flex-flow: column;
+}
+
+/* ========================= section 1 ========================= */
+.qnaMode_section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 5% 10% 5% 10%;
+}
+
+.qnaModeTitle {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* ========================= section 2 ========================= */
+.qnaMode_section2 {
+    display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-rows: auto;
+	min-height: 0;
+	min-width: 0;
+	grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.qnaMode_section2_app {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+}
+
+.qnaMode_section2_device1 {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+}
+
+.qnaMode_section2_device2 {
+    background-color: white;
+    border: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    padding:6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qnaTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.qnaInput {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.qnaInput>form {
+    width: 100%;
+}
+
+.qnaMenuItems1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3% 2% 1%;
+    border-bottom: 3px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    font-size:20px;
+}
+
+.qnaMenuText {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.qnaMode_section2_deviceCont {
+    display: grid;
+	grid-row-gap: 20px;
+	grid-template-rows: auto;
+}
+
+.qnaContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.qnaContent1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5% 5% 5% 8%;
+}
+
+.qnaContent1 > img {
+    width: 100%;
+}
+
+.qnaContent2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5%;
+}
+
+.qnaContentText {
+    padding-right: 4%;
+    font-size: 18px;
+}
+
+#buttonWrite {
+    width: 100px;
+    height: 35px;
+    border: 0;
+    border-radius: 2rem;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+/* ========================= 아코디언 FAQ ========================= */
+.notice_section2_user {
+    width: 100%;
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accordion-menu {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+.accordion-menu li.open .dropdownlink {
+    background: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    border-bottom: 0;
+}
+
+.accordion-menu li.open .dropdownlink .fa-chevron-down {
+    transform: rotate(180deg);
+    background: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accordion-menu li:last-child .dropdownlink {
+    border-bottom: 0;
+}
+
+.dropdownlink {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 15px;
+    font-size: 18px;
+    /* border-bottom: 1px solid #ccc; */
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    color: #212121;
+    position: relative;
+    transition: all 0.4s ease-out;
+    line-height: 2;
+}
+
+.dropdownlink i {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.dropdownlink .fa-chevron-down {
+    right: 12px;
+    left: auto;
+}
+
+.submenuItems {
+    display: none;
+    background: transparent;
+}
+
+.submenuItems li {
+    /* border-bottom: 1px solid #B6B6B6; */
+    border: 2px solid;
+    border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
+    border-image-slice: 1;
+    display: block;
+    color: black;
+    padding: 12px 12px 12px 28px;
+    transition: all 0.4s ease-out;
+    font-size: 16px;
+    line-height: 2;
+    margin: 0 20px 0 20px;
+}
+

@@ -1,11 +1,10 @@
 body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    background-color: #F4F3F8;
 }
 
 #contaniner {
     width: 100%;
-    /* min-height: 100vh; */
+    /* min-height: 100%; */
     overflow-x: hidden;
     display: flex;
     /* justify-content: center; */

@@ -90,6 +90,7 @@
     font-size: 16px;
     text-align: center;
     font-weight: 500;
+    background-color: #EFEFEF;
 }
 
 .camMenuItems6 {
@@ -203,17 +204,42 @@ input:checked+.slider:before {
         font-size: 14px;
     }
 
-    .camMenuItems6 {
-        font-size: 16px;
-    }
-    
     .buttonCam {
         width: 50px;
         height: 30px;
         border: 0;
-        border-radius: 1.8rem;
+        border-radius: 1rem;
         font-size: 14px;
         text-align: center;
         font-weight: 500;
     }
+
+    .camMenuItems3 {
+        padding: 3% 5% 3% 3%;
+    }
+
+    .camMenuItems4 {
+        padding: 3% 5% 3% 3%;
+    }
+
+    .camMenuItems5 {
+        padding: 3% 5% 3% 3%;
+        /* flex-direction: column;
+        align-items: flex-start; */
+    }
+
+    .camMenuItems6 {
+        padding: 3% 5% 3% 3%;
+    }
+
+    .camQualityTitle {
+        margin-bottom: 10px;
+    }
+
+    /* .camQuality {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+    } */
 }

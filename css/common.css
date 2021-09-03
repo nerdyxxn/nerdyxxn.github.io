@@ -6,6 +6,8 @@
 body {
     font: 'Noto Sans CJK KR', Noto Sans KR, sans-serif;
     -ms-overflow-style: none;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 ::-webkit-scrollbar {

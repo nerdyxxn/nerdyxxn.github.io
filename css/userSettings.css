@@ -58,10 +58,12 @@
 
 .userMode_section2_setting {
     background-color: transparent;
-    min-height: 400px;
     display: grid;
-    /* flex-direction: column;
-    justify-content: space-between; */
+    grid-row-gap: 12px;
+}
+
+.userMode_section2_setting > a {
+    height: 100%;
 }
 
 .settingItems {

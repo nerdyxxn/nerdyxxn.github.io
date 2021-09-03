@@ -236,6 +236,11 @@
         width: 80%;
     }
 
+    .emptyLogo {
+        color: transparent;
+        font-size: 24px;
+    }
+
     #buttonSos {
         height: 70px;
     }

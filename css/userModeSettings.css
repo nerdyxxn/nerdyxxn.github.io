@@ -33,10 +33,11 @@
 	grid-template-columns: repeat(2, 1fr);
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .userMode_section2_device {
+    height: 100%;
     background-color: white;
     border: 3px solid;
     border-image-source: linear-gradient(to right, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
@@ -45,6 +46,7 @@
 }
 
 .userMode_section2_wifi {
+    height: 100%;
     background-color: white;
     border: 3px solid;
     border-image-source: linear-gradient(to right, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
@@ -189,7 +191,7 @@
         grid-template-columns: repeat(1, 1fr);
         margin-left: 7%;
         margin-right: 7%;
-        margin-bottom: 3%;
+        margin-bottom: 10%;
     }
     #buttonAddDevice {
         font-size: 18px;

@@ -21,6 +21,11 @@
     font-weight: 500;
 }
 
+.emptyLogo {
+    color: transparent;
+    font-size: 30px;
+}
+
 /* ========================= section 2 ========================= */
 .csMode_section2 {
     display: grid;
@@ -210,6 +215,11 @@ ul.tabs li.current {
 }
 
 @media screen and (max-width : 900px) {
+    .emptyLogo {
+        color: transparent;
+        font-size: 24px;
+    }
+
     .tab-content.current {
         display: grid;
         grid-column-gap: 30px;
@@ -227,13 +237,17 @@ ul.tabs li.current {
         font-weight: 500;
     }
 
+    ul.tabs li {
+        padding: 10px 10px;
+    }
+
     ul.tabs li.current {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
     }
 
     .tabs {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .dbFrameBtn {

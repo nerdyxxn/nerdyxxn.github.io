@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .appSectionTitle {
@@ -51,7 +51,7 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .appMenuText {
@@ -167,13 +167,32 @@ input:checked+.slider:before {
         font-size: 24px;
         font-weight: 500;
     }
+
     .appMenuItems1 {
         font-size: 18px;
         padding-left: 15px;
+        padding: 2% 4% 3% 2%;
     }
+
     .appMenuText {
         font-size: 18px;
         padding-left: 15px;
+    }
+
+    .app_section2_user {
+        padding: 4%;
+    }
+
+    .appMenuItems2 {
+        padding: 3% 4% 3% 3%;
+    }
+
+    .appMenuItems3 {
+        padding: 3% 4% 3% 3%;
+    }
+
+    .appMenuItems4 {
+        padding: 3% 4% 3% 3%;
     }
 }
 
@@ -182,12 +201,31 @@ input:checked+.slider:before {
         font-size: 22px;
         font-weight: 500;
     }
+
     .appMenuItems1 {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 15px;
+        padding: 3% 5% 4% 3%;
     }
+
     .appMenuText {
         font-size: 16px;
         padding-left: 15px;
+    }
+    
+    .app_section2_user {
+        padding: 5%;
+    }
+
+    .appMenuItems2 {
+        padding: 4% 5% 4% 4%;
+    }
+
+    .appMenuItems3 {
+        padding: 4% 5% 4% 4%;
+    }
+
+    .appMenuItems4 {
+        padding: 4% 5% 4% 4%;
     }
 }

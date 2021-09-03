@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .noticeSectionTitle {
@@ -53,6 +53,7 @@
     border-radius: 4px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 25px;
 }
 
 .accordion-menu li.open .dropdownlink {
@@ -67,7 +68,7 @@
     transform: rotate(180deg);
     background: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 
 .accordion-menu li:last-child .dropdownlink {
@@ -135,25 +136,53 @@
         font-size: 24px;
         font-weight: 500;
     }
+
     .dropdownlink {
         padding: 15px 15px 15px 15px;
         font-size: 16px;
     }
+
     .notice_section2_user {
         padding: 2%;
     }
 }
 
 @media screen and (max-width : 768px) {
+    .notice_section2 {
+        display: flex;
+        justify-content: center;
+        /* justify-items: center; */
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
+    }
+
     .noticeSectionTitle {
         font-size: 22px;
         font-weight: 500;
     }
+
+
+    .notice_section2_user {
+        padding: 1%;
+    }
+
+    /* 아코디언 메뉴 CSS - 모바일 */
     .dropdownlink {
         padding: 15px 15px 15px 15px;
         font-size: 14px;
     }
-    .notice_section2_user {
-        padding: 1%;
+
+    .accordion-menu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .submenuItems li {
+        padding: 12px 12px 12px 28px;
+        transition: all 0.4s ease-out;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 13px 0 13px;
     }
 }

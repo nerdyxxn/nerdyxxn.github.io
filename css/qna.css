@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .qnaModeTitle {
@@ -25,12 +25,12 @@
 /* ========================= section 2 ========================= */
 .qnaMode_section2 {
     display: grid;
-	grid-column-gap: 30px;
-	grid-row-gap: 30px;
-	grid-template-rows: auto;
-	min-height: 0;
-	min-width: 0;
-	grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    min-height: 0;
+    min-width: 0;
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
@@ -41,7 +41,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
 }
 
 .qnaMode_section2_device1 {
@@ -49,7 +49,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
 }
 
 .qnaMode_section2_device2 {
@@ -57,7 +57,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .qnaMenuText {
@@ -100,8 +100,8 @@
 
 .qnaMode_section2_deviceCont {
     display: grid;
-	grid-row-gap: 20px;
-	grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
 }
 
 .qnaContent {
@@ -109,18 +109,18 @@
     flex-direction: column;
 }
 
-.qnaContent1{
+.qnaContent1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 5% 5% 5% 8%;
 }
 
-.qnaContent1 > img {
+.qnaContent1>img {
     width: 100%;
 }
 
-.qnaContent2{
+.qnaContent2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -140,6 +140,7 @@
     font-size: 16px;
     text-align: center;
     font-weight: 400;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -236,9 +237,9 @@
         min-height: 0;
         min-width: 0;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 7%;
-        margin-right: 7%;
-        margin-bottom: 3%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 8%;
     }
 
     .qnaModeTitle {
@@ -255,6 +256,12 @@
         font-size: 18px;
         padding-left: 15px;
     }
+
+    .qnaTitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -263,8 +270,47 @@
         font-weight: 500;
     }
 
+    .qnaMenuItems1 {
+        padding: 1% 3% 3% 1%;
+    }
+
+    .qnaMenuTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
     .qnaMenuText {
         font-size: 16px;
         padding-left: 15px;
+    }
+
+    .qnaTitle {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    #buttonWrite {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    /* 아코디언 메뉴 CSS - 모바일 */
+    .dropdownlink {
+        padding: 15px 15px 15px 15px;
+        font-size: 14px;
+    }
+
+    .accordion-menu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .submenuItems li {
+        padding: 12px 12px 12px 28px;
+        transition: all 0.4s ease-out;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0 13px 0 13px;
     }
 }

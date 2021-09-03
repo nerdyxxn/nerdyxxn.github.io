@@ -246,14 +246,15 @@ main .post-content .post-meta {
 /* ========================= @media CSS ========================= */
 @media screen and (max-width : 1024px) {
   .sidebar-list {
-    display: flex;
-    flex-direction: column;
     font-size: 22px;
-    float: right;
   }
 }
 
 @media screen and (max-width : 768px) {
+  .sidebar-list {
+    font-size: 20px;
+  }
+
   aside {
     width: 80%;
   }
@@ -261,5 +262,10 @@ main .post-content .post-meta {
   .menu-toggle span {
     color: #ccc;
     font-size: 24px;
+  }
+
+  .slideLogo>a>img {
+    width: 150px;
+    height: 60px;
   }
 }

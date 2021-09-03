@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .guardModeTitle {
@@ -25,12 +25,12 @@
 /* ========================= section 2 ========================= */
 .guardMode_section2 {
     display: grid;
-	grid-column-gap: 30px;
-	grid-row-gap: 30px;
-	grid-template-rows: auto;
-	min-height: 0;
-	min-width: 0;
-	grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    min-height: 0;
+    min-width: 0;
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
@@ -41,7 +41,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
 }
 
 .guardMode_section2_device1 {
@@ -49,7 +49,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
 }
 
 .guardMode_section2_device2 {
@@ -57,7 +57,7 @@
     border: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    padding:6%;
+    padding: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .guardInput>form {
@@ -95,7 +95,7 @@
     border-bottom: 3px solid;
     border-image-source: linear-gradient(0.45turn, #de93d1, #b8aaed, #c1b2fb, #c1cdf8, #c0defb);
     border-image-slice: 1;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .appMenuText {
@@ -149,8 +149,8 @@
 
 .guardMode_section2_deviceCont {
     display: grid;
-	grid-row-gap: 20px;
-	grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
 }
 
 
@@ -229,7 +229,7 @@ input:checked+.slider:before {
     position: relative;
 }
 
-#buttonAddDevice{
+#buttonAddDevice {
     border: 0;
     cursor: pointer;
 }
@@ -338,6 +338,10 @@ input:checked+.slider:before {
         font-size: 18px;
         padding-left: 15px;
     }
+
+    .guardTitle {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -349,5 +353,9 @@ input:checked+.slider:before {
     .appMenuText {
         font-size: 16px;
         padding-left: 15px;
+    }
+
+    .guardTitle {
+        font-size: 16px;
     }
 }

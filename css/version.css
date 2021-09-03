@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .verSectionTitle {
@@ -82,6 +82,7 @@
     border-radius: 35px;
     width: 25%;
     height: 50px;
+    min-width: 110px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -107,6 +108,19 @@
 }
 
 @media screen and (max-width : 768px) {
+    .ver_section1 {
+        margin: 10% 10% 7% 10%;
+    }
+
+    .verMenuItems1 {
+        padding: 2% 3% 6% 1%;
+        font-size: 20px;
+    }
+
+    .verMenuItems2 {
+        padding: 2% 3% 8% 2%;
+    }
+
     .verSectionTitle {
         font-size: 22px;
         font-weight: 500;
@@ -122,5 +136,10 @@
 
     .update_text {
         font-size: 16px;
+    }
+
+    #buttonUpdate {
+        border-radius: 35px;
+        height: 40px;
     }
 }

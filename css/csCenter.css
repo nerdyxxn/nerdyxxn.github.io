@@ -3,7 +3,7 @@
     height: 100%;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F3F8;
     flex-flow: column;
 }
@@ -13,12 +13,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5% 10% 5% 10%;
+    margin: 10% 10% 5% 10%;
 }
 
 .csModeTitle {
     font-size: 28px;
     font-weight: 500;
+}
+
+.emptyLogo {
+    color: transparent;
+    font-size: 30px;
 }
 
 /* ========================= section 2 ========================= */
@@ -78,5 +83,17 @@
         font-size: 18px;
         font-weight: 400;
         padding: 20px 40px 20px 40px;
+    }
+
+    .wifiTitle {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 20px 10px 30px;
+        min-height: 74px;
+    }
+
+    .emptyLogo {
+        color: transparent;
+        font-size: 24px;
     }
 }

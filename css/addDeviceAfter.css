@@ -94,6 +94,18 @@
     border-radius: 30px;
 }
 
+#carsAfter01 {
+    display: none !important;
+}
+
+#carsAfter02 {
+    display: none !important;
+}
+
+#carsAfter03 {
+    display: none !important;
+}
+
 /* ========================= section 3 ========================= */
 .main_section3 {
     width: 85%;
@@ -267,13 +279,16 @@
 }
 
 @media screen and (max-width : 768px) {
+    .logo {
+        width: 120px;
+    }
+
     .logo>a>img {
         width: 70%;
     }
 
     .emptyLogo {
-        color: transparent;
-        font-size: 24px;
+        display: none;
     }
 
     #buttonSos {
@@ -289,5 +304,38 @@
         border-radius: 25px;
         border: 16px solid white;
         margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width : 430px) {
+    .carousel {
+        height: 280px;
+        border-radius: 25px;
+        border: 16px solid white;
+    }
+
+    #carsBefore01 {
+        display: none !important;
+    }
+
+    #carsBefore02 {
+        display: none !important;
+    }
+
+    #carsBefore03 {
+        display: none !important;
+    }
+
+    #carsAfter01 {
+        display: block !important;
+    }
+
+    #carsAfter02 {
+        display: block !important;
+    }
+
+    #carsAfter03 {
+        display: block !important;
     }
 }

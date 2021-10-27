@@ -46,8 +46,23 @@
     color: #5c5c5c;
 }
 
+/* ================================================== 소셜로그인 button ================================================== */
+.indexSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 18px;
+}
 
-/* login button */
+.indexSocialBtn img {
+    width: 45px;
+    height: 45px;
+    margin: 10px 16px 10px 16px;
+}
+
+
+/* ================================================== login button ================================================== */
 #buttonLogin {
     background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
     color: #fff;
@@ -63,7 +78,7 @@
     font-weight: 500;
 }
 
-/* input text CSS */
+/* ================================================== input text CSS ================================================== */
 .field {
     height: 50px;
     width: 100%;
@@ -119,7 +134,7 @@
 }
 
 
-/* ========================= @media CSS ========================= */
+/* ================================================== @media CSS ================================================== */
 @media screen and (max-width : 1024px) {
     .index_section {
         width: 350px;

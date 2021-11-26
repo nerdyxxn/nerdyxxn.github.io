@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A 로그인</title>
+    <title>IPU : 로그인</title>
     <!-- RESET -->
     <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
     <!-- CSS -->
@@ -13,11 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <!-- JS -->
-    <script type="text/javascript" src="js/index.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
 </head>
 
 <body>
-    <div id="contaniner">
+    <div id="container">
         <div class="index_section">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
@@ -37,21 +37,28 @@
                 </form>
             </div>
             <div class="indexInput_items">
-                <label for="loginCheck" class="inputLogin">간편 로그인</label>&nbsp;&nbsp;
-                <input type="checkbox" id="loginCheck" name="deeporange" />
+                <!-- <label for="loginCheck" class="inputLogin">간편 로그인</label>&nbsp;&nbsp;
+                <input type="checkbox" id="loginCheck" name="deeporange" /> -->
             </div>
-            <button id="buttonLogin" type="button" class="btn btn-primary btn-lg" onclick="location.href='main.html'">
+            <button id="buttonLogin" type="button" class="btn btn-primary btn-lg"
+                onclick="location.href='userHome.html'">
                 <p class="login_text">LOGIN</p>
             </button>
             <div class="indexPwId">
                 <a href="#">아이디 찾기&nbsp;&nbsp;&nbsp;|</a>
                 <a href="#">&nbsp;&nbsp;&nbsp;비밀번호 찾기&nbsp;&nbsp;&nbsp;|</a>
-                <a href="#">&nbsp;&nbsp;&nbsp;회원 가입</a>
+                <a href="create_account.html">&nbsp;&nbsp;&nbsp;회원가입</a>
             </div>
             <div class="indexSocial">
-                <a href="main.html" class="indexSocialBtn" id="socialKakaoBtn" ><img src="img/icon/ico_kakao45.png"></a>
-                <a href="main.html" class="indexSocialBtn" id="socialNaverBtn" ><img src="img/icon/ico_naver45.png"></a>
-                <a href="main.html" class="indexSocialBtn" id="socialGoogleBtn" ><img src="img/icon/ico_google45.png"></a>
+                <a href="main.html" class="indexSocialBtn" id="socialLoginKakao"><img src="img/icon/ico_kakao45.png">
+                    <p>카카오 아이디로<br> 로그인</p>
+                </a>
+                <a href="main.html" class="indexSocialBtn" id="socialLoginNaver"><img src="img/icon/ico_naver45.png">
+                    <p>네이버 아이디로<br> 로그인</p>
+                </a>
+                <a href="main.html" class="indexSocialBtn" id="socialLoginGoogle"><img src="img/icon/ico_google45.png">
+                    <p>구글 아이디로<br> 로그인</p>
+                </a>
             </div>
         </div>
     </div>

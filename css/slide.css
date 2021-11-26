@@ -16,6 +16,8 @@ h2 {
 
 body {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 body:before {
@@ -49,7 +51,7 @@ body.show-sidebar:before {
 
 aside,
 main {
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 580px;
 }
 
@@ -174,7 +176,8 @@ aside .side-inner .share form .btn {
 }
 
 main {
-  width: calc(100%);
+  /* width: calc(100%); */
+  width: 1400px;
 }
 
 main .post-entry {
@@ -198,9 +201,17 @@ main .post-content .post-meta {
 }
 
 /* Toggle */
+.menu-toggle {
+  border: 0;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: 1px 5px 5px 1px rgb(0 0 0 / 10%); */
+  box-shadow: 0.125rem .25rem rgba(0, 0, 0, .08) !important;
+}
+
 .menu-toggle span {
   color: #ccc;
-  /* font-size: 2rem; */
   font-size: 30px;
 }
 
@@ -218,7 +229,7 @@ main .post-content .post-meta {
 .sidebar-list {
   display: flex;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 20px;
   float: right;
 }
 
@@ -246,15 +257,11 @@ main .post-content .post-meta {
 /* ========================= @media CSS ========================= */
 @media screen and (max-width : 1024px) {
   .sidebar-list {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width : 768px) {
-  .sidebar-list {
-    font-size: 20px;
-  }
-
   aside {
     width: 80%;
   }

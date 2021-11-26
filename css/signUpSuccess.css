@@ -1,0 +1,139 @@
+#container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+}
+
+.signUpSuc_section {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 100px;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.logo>a {
+    width: 100%;
+    text-align: center;
+}
+
+.success-wrap {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    /* border-radius: 10px; */
+    -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+}
+
+.success_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ico_success {
+    margin-bottom: 30px;
+}
+
+.success_title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.success_text {
+    font-size: 16px;
+}
+
+.sucBtnItems {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+.sucBtnItems button {
+    margin: 10px 10px 30px 10px;
+}
+
+.sucBtnItemsTmp {
+    display: flex;
+    justify-content: center;
+}
+
+.successBtn {
+    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.successBtn:hover {
+    opacity: 0.8;
+}
+
+#toProductBtn {
+    color: #888;
+    margin-top: 30px;
+}
+
+#toProductBtn:hover {
+    color: #b8aaed;
+}
+
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+    .signUpSuc_section {
+        width: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin: 50px 10px 80px 10px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .logo {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .logo>a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo>a>img {
+        width: 64%;
+    }
+
+    .success_title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .success_text {
+        font-size: 14px;
+    }
+
+    #toProductBtn {
+        font-size: 14px;
+    }
+}

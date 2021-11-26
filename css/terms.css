@@ -1,0 +1,137 @@
+::selection {
+    background: #ffee33;
+}
+
+#container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+}
+
+.terms_wrap {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-flow: column;
+
+    width: 832px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 180px;
+}
+
+/* ================================== 약관 상단 메뉴 ================================== */
+.wrap_menu {
+    overflow: hidden;
+    margin-top: 27px;
+    padding: 19px 0 21px;
+    border: 1px solid #1e1e1e;
+}
+
+.wrap_menu .list_menu {
+    float: left;
+    width: 33.33%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.wrap_menu .list_menu .link_menu {
+    display: block;
+    line-height: 34px;
+    color: #1e1e1e;
+}
+
+.wrap_menu .list_submenu {
+    padding-left: 25px;
+}
+
+.wrap_menu .list_submenu .link_menu {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* ================================== 약관 타이틀 ================================== */
+.wrap_title {
+    position: relative;
+    padding-top: 96px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.wrap_title h3 {
+    font-size: 19px;
+}
+
+/* ================================== 약관 내용 ================================== */
+.wrap_content {
+    margin: 0 auto;
+    margin-top: 80px;
+    border-top: 2px solid #4d4d4d;
+}
+
+.wrap_policy .tit_policy:first-child {
+    margin-top: 0;
+    border-top: 0 none;
+}
+
+.tit_policy {
+    display: block;
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1e1e1e;
+}
+
+.tit_subject {
+    display: block;
+    padding-top: 40px;
+    line-height: 28px;
+    color: #1e1e1e;
+}
+
+.desc_g {
+    padding-top: 18px;
+    line-height: 26px;
+    color: #666;
+}
+
+.list_1depth {
+    padding-left: 25px;
+}
+
+.list_1depth li {
+    padding-top: 18px;
+    line-height: 26px;
+    color: #666;
+}
+
+.list_2depth_type2 {
+    padding: 10px 0 0 40px;
+}
+
+.list_2depth_type2 li {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.list_2depth_type2 .txt_num {
+    display: inline-block;
+    min-width: 15px;
+    margin: 0 4px 0 -19px;
+    vertical-align: top;
+}
+
+.list_1depth .list_2depth_type2 {
+    padding-left: 19px;
+}
+
+.list_1depth .list_2depth_type2 li {
+    padding-top: 0;
+}

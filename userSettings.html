@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/slide.css">
-
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/userSettings.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- JS -->
     <script src="js/popper.min.js"></script>
     <script src="js/main.js"></script>
@@ -42,7 +42,6 @@
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-item"><a href="userSettings.html" class="sidebar-anchor">사용자 설정</a></li>
-                <li class="sidebar-item"><a href="wifiSettings.html" class="sidebar-anchor">Wifi 설정</a></li>
                 <li class="sidebar-item"><a href="dataIpu.html" class="sidebar-anchor">기록관리</a></li>
                 <li class="sidebar-item"><a href="csCenter.html" class="sidebar-anchor">고객센터</a></li>
             </ul>
@@ -60,9 +59,9 @@
                     사용자 설정
                 </div>
                 <div class="toggle">
-                    <a href="#" class="js-menu-toggle menu-toggle">
+                    <button class="js-menu-toggle menu-toggle">
                         <span class="icon-align-right text-black"></span>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="userMode_section2">
@@ -83,41 +82,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="userMode_section2_setting">
-                    <a href="camSettings.html">
-                        <div class="settingItems">
-                            <p>녹화/카메라 설정</p>
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="settingItems">
-                            <p>모션/보이스 감지 설정</p>
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                    </a>
-                    <a href="guardSettings.html">
-                        <div class="settingItems">
-                            <p>보호자 설정</p>
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                    </a>
-                    <a href="nightSettings.html">
-                        <div class="settingItems">
-                            <p>야간모드 설정</p>
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                    </a>
-                    <a href="language.html">
-                        <div class="settingItems">
-                            <p>언어 설정</p>
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                    </a>
+            </div>
+            <div class="guardMode_section2">
+                <div class="guardMode_section2_app">
+                    <div class="appMenuItemsList">
+                        <p class="appMenuTitle">보호자 리스트</p>
+                    </div>
+                    <div class="guardListCont">
+                    </div>
+                    <p class="guardTitle">보호자 등록</p>
+                    <div class="guardInputCont">
+                        <form id="todo-form">
+                            <div class="field">
+                                <input type="text" class="guardInput" required placeholder="등록할 이름을 입력하세요">
+                                <button type="submit" class="addGuardBtn">등록</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="guardMode_section2_device">
+                    <p class="productTitle">제품 등록</p>
+                    <div class="productInput">
+                        <form>
+                            <div class="field">
+                                <input type="text" required placeholder="제품번호를 입력하세요">
+                                <button type="button" class="addProductBtn" onclick="location.href='userHome.html'">등록</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- <script src="js/todo.js" defer></script> -->
+    <script src="js/todoUp.js" defer></script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .indexInput>form {
@@ -33,11 +33,12 @@ body {
 }
 
 .logo {
-    margin: 15%;
+    margin: 90px auto;
+    text-align: center;
 }
 
 .logo>a>img {
-    width: 100%;
+    width: 90%;
 }
 
 .indexInput_items {
@@ -67,7 +68,7 @@ body {
     margin-bottom: 40px;
     cursor: pointer;
     font-family: Noto Sans KR;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -162,9 +163,18 @@ body {
         align-items: center;
         flex-flow: column;
     }
+    
+    .logo>a>img {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width : 768px) {
+    .logo {
+        margin: 70px auto;
+        text-align: center;
+    }
+
     .index_section {
         width: 300px;
         display: flex;

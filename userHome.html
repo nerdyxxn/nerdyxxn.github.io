@@ -87,6 +87,11 @@
                                                 </ul>
                                                 <ul class="select_ul_hour">
                                                     <li>
+                                                        <div class="option 0hour" id="0">
+                                                            <p>0시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
                                                         <div class="option 1hour" id="3600">
                                                             <p>1시간</p>
                                                         </div>
@@ -116,13 +121,18 @@
                                             <div class="select_wrap">
                                                 <ul class="default_option">
                                                     <li>
-                                                        <div class="option 10minute" id="0">
+                                                        <div class="option 0minute" id="0">
                                                             <p>0분</p>
                                                         </div>
                                                     </li>
                                                     <i class="fa fa-chevron-down" aria-hidden="true" id="faDown"></i>
                                                 </ul>
                                                 <ul class="select_ul">
+                                                    <li>
+                                                        <div class="option 0minute" id="0">
+                                                            <p>0분</p>
+                                                        </div>
+                                                    </li>
                                                     <li>
                                                         <div class="option 1minute" id="60">
                                                             <p>1분</p>
@@ -314,6 +324,12 @@
 
             document.getElementById('userSendSOS_help').innerHTML = gdTitle + " 보호자 " +
                 "&nbsp;<p style='color: #ABA4FE;'>" + gdName + "</p>" + " 님에게 보호 요청 중입니다!";
+
+            // 활성화 된 보호자가 없으면 요청상황 텍스트 원상태로
+            if ($(this).parent().children().hasClass("gd-active") === false) {
+                console.log('false - if문 진입');
+                document.getElementById('userSendSOS_help').innerHTML = "보호요청 대기중입니다.";
+            }
         })
     </script>
 </body>

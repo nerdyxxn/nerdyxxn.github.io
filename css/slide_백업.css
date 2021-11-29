@@ -1,4 +1,5 @@
 a {
+  color: #313131;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -15,6 +16,8 @@ h2 {
 
 body {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 body:before {
@@ -48,7 +51,7 @@ body.show-sidebar:before {
 
 aside,
 main {
-  height: 100vh;
+  /* height: 100vh; */
   min-height: 580px;
 }
 
@@ -105,7 +108,7 @@ aside .side-inner {
 }
 
 aside .side-inner .share {
-  padding: 50px;
+  /* padding: 50px; */
 }
 
 aside .side-inner .share h2 {
@@ -173,7 +176,8 @@ aside .side-inner .share form .btn {
 }
 
 main {
-  width: calc(100%);
+  /* width: calc(100%); */
+  width: 1400px;
 }
 
 main .post-entry {
@@ -197,9 +201,17 @@ main .post-content .post-meta {
 }
 
 /* Toggle */
+.menu-toggle {
+  border: 0;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: 1px 5px 5px 1px rgb(0 0 0 / 10%); */
+  box-shadow: 0.125rem .25rem rgba(0, 0, 0, .08) !important;
+}
+
 .menu-toggle span {
   color: #ccc;
-  /* font-size: 2rem; */
   font-size: 30px;
 }
 
@@ -210,4 +222,57 @@ main .post-content .post-meta {
 
 .menu-toggle.active span {
   color: #fff;
+}
+
+
+/* 메뉴 리스트 */
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  float: right;
+}
+
+.sidebar-item {
+  padding: 20px 50px 20px 20px;
+  text-align: right;
+}
+
+.slideLogo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 24px;
+  padding: 20px 0px 20px 20px;
+  border-bottom: 1px solid black;
+}
+
+.slideLogo>a>img {
+  width: 178px;
+  height: 72px;
+}
+
+
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+  .sidebar-list {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  aside {
+    width: 80%;
+  }
+
+  .menu-toggle span {
+    color: #ccc;
+    font-size: 24px;
+  }
+
+  .slideLogo>a>img {
+    width: 150px;
+    height: 60px;
+  }
 }

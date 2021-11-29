@@ -34,6 +34,7 @@ body {
 
 .logo {
     margin: 90px auto;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -61,14 +62,14 @@ body {
     background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
     color: #fff;
     border: 0;
-    border-radius: 35px;
+    border-radius: 30px;
     width: 98%;
-    height: 60px;
-    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.12);
+    height: 56px;
+    box-shadow: 5px 7px 7px rgb(0 0 0 / 10%);
     margin-bottom: 40px;
     cursor: pointer;
     font-family: Noto Sans KR;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -171,7 +172,7 @@ body {
 
 @media screen and (max-width : 768px) {
     .logo {
-        margin: 70px auto;
+        margin: 25px 0px 70px 0px;
         text-align: center;
     }
 

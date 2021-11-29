@@ -24,11 +24,10 @@
     <link rel="stylesheet" type="text/css" href="css/html5_reset.css">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/userHome.css" />
-
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" type="text/css" href="css/userHome.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- JS -->
     <script src="js/popper.min.js"></script>
@@ -74,71 +73,154 @@
                             <div class="dropdownlink">사용자 귀갓길 진행상황<i class="fa fa-chevron-down" aria-hidden="true"></i>
                             </div>
                             <ul class="submenuItems">
-                                <li>
-                                    <form action="" name="frm">
-                                        <div class="userTimer">
-                                            <div>
-                                                <select id="selid" name="selid">
-                                                    <option value="60">1</option>
-                                                    <option value="600">10</option>
-                                                    <option value="1200">20</option>
-                                                    <option value="1800">30</option>
-                                                    <option value="2400">40</option>
-                                                    <option value="3000">50</option>
-                                                </select>
-                                                <span>분</span>
-                                                <input type="button" value="설정" onclick="timeSet()"
-                                                    class="btn btn-primary">
+                                <li class="submenuLi">
+                                    <form id="app-cover" method="get" action="" name="frm">
+                                        <div class="wrapper">
+                                            <div class="select_wrap_hour">
+                                                <ul class="default_option_hour">
+                                                    <li>
+                                                        <div class="option 0hour" id="0">
+                                                            <p>0시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <i class="fa fa-chevron-down" aria-hidden="true" id="faDown"></i>
+                                                </ul>
+                                                <ul class="select_ul_hour">
+                                                    <li>
+                                                        <div class="option 0hour" id="0">
+                                                            <p>0시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 1hour" id="3600">
+                                                            <p>1시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 2hour" id="7200">
+                                                            <p>2시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 3hour" id="10800">
+                                                            <p>3시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 4hour" id="14400">
+                                                            <p>4시간</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 5hour" id="18000">
+                                                            <p>5시간</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div id="countdown">time selected</div>
-                                            <div id="test"></div>
-                                            <div id="myProgress">
-                                                <div id="myBar"></div>
+                                            <div class="select_wrap">
+                                                <ul class="default_option">
+                                                    <li>
+                                                        <div class="option 0minute" id="0">
+                                                            <p>0분</p>
+                                                        </div>
+                                                    </li>
+                                                    <i class="fa fa-chevron-down" aria-hidden="true" id="faDown"></i>
+                                                </ul>
+                                                <ul class="select_ul">
+                                                    <li>
+                                                        <div class="option 0minute" id="0">
+                                                            <p>0분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 1minute" id="60">
+                                                            <p>1분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 10minute" id="600">
+                                                            <p>10분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 20minute" id="1200">
+                                                            <p>20분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 30minute" id="1800">
+                                                            <p>30분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 40minute" id="2400">
+                                                            <p>40분</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="option 50minute" id="3000">
+                                                            <p>50분</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
+                                            <button class="timeBtn" type="button" onclick="timeSet()">설정</button>
+                                            <button class="timeResetBtn" type="button" onclick="timeReset()">취소</button>
+                                        </div>
                                     </form>
+                                    <div class="pbarTime">
+                                        <div class="minValue"></div>
+                                        <div id="maxValue"></div>
+                                    </div>
+                                    <div id="myProgress">
+                                        <ul class="progress_point">
+                                            <li id="startPoint"></li>
+                                            <li id="halfPoint"></li>
+                                            <li id="endPoint"></li>
+                                        </ul>
+                                        <div id="myBar"></div>
+                                    </div>
+                                    <div class="pbarText">
+                                        <div class="startValue">출발</div>
+                                        <div id="countdown"></div>
+                                        <div class="endValue">도착</div>
+                                    </div>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
+                <div id="userSendSOS_help">
+                    <p>보호요청 대기중입니다.</p>
+                </div>
                 <div class="userSendSOS">
-                    <form id="app-cover" method="get" action="">
-                        <div class="wrapper">
-                            <div class="select_wrap">
-                                <ul class="default_option">
-                                    <li>
-                                        <div class="option pizza" id="100">
-                                            <p>Pizzas</p>
-                                        </div>
-                                    </li>
-                                    <i class="fa fa-chevron-down" aria-hidden="true" id="faDown"></i>
-                                </ul>
-                                <ul class="select_ul">
-                                    <li>
-                                        <div class="option pizza" id="100">
-                                            <p>Pizzas</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="option burger" id="200">
-                                            <p>Burget</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="option ice" id="300">
-                                            <p>Ice Cream</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="option fries" id="400">
-                                            <p>Fried Potatoes</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <button class="btn btn-primary" type="button" onclick="sendBox()">전송
-                        </div>
-                    </form>
+                    <button class="callGuard" onclick="">
+                        <!-- <i class="fas fa-bell"></i> -->
+                        <i class="fas fa-phone-volume"></i>
+                    </button>
+                    <div class="guardItems">
+                        <button class="guardSqure" id="guard01">
+                            <div class="guardSqureTitle">1순위</div>
+                            <div class="guardSqureName">엄마</div>
+                        </button>
+                        <button class="guardSqure" id="guard02">
+                            <div class="guardSqureTitle">2순위</div>
+                            <div class="guardSqureName">아빠</div>
+                        </button>
+                        <button class="guardSqure" id="guard03">
+                            <div class="guardSqureTitle">3순위</div>
+                            <div class="guardSqureName">언니</div>
+                        </button>
+                        <button class="guardSqure" id="guard04">
+                            <div class="guardSqureTitle">4순위</div>
+                            <div class="guardSqureName">엄마</div>
+                        </button>
+                        <button class="guardSqure" id="guard05">
+                            <div class="guardSqureTitle">5순위</div>
+                            <div class="guardSqureName">동생</div>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="main_section3">
@@ -167,28 +249,6 @@
                     <!-- Button trigger modal -->
                     <button id="buttonSos" type="button" class="btn btn-primary" data-toggle="modal"
                         data-target="#exampleModalCenterSOS">
-                        <p class="sos_text">SOS</p>
-                    </button>
-                    <!-- SOS Modal -->
-                    <div class="modal fade" id="exampleModalCenterSOS" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <p class="modal-title" id="exampleModalLongTitle">SOS</p>
-                                </div>
-                                <div class="modal-body">
-                                    <a href="tel:02-1234-5678" class="mode_Items">보호자<br>연결</a>
-                                    <a href="tel:02-1234-5678" class="mode_Items">112<br>연결</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sosButton">
-                    <!-- Button trigger modal -->
-                    <button id="buttonSos" type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalCenterSOS">
                         <p class="sos_text">112신고</p>
                     </button>
                     <!-- SOS Modal -->
@@ -197,11 +257,32 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <p class="modal-title" id="exampleModalLongTitle">위치전송</p>
+                                    <p class="modal-title" id="exampleModalLongTitle">-</p>
                                 </div>
                                 <div class="modal-body">
-                                    <a href="tel:02-1234-5678" class="mode_Items">보호자<br>연결</a>
-                                    <a href="tel:02-1234-5678" class="mode_Items">112<br>연결</a>
+                                    <a href="tel:02-1234-5678" class="mode_Items">112연결</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sosButton">
+                    <!-- Button trigger modal -->
+                    <button id="buttonSendGeo" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalSendGeo">
+                        <p class="sos_text">위치전송</p>
+                    </button>
+                    <!-- SOS Modal -->
+                    <div class="modal fade" id="exampleModalSendGeo" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLongTitle">현재 내 위치전송</p>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="map" style="width:100%;height:350px;"></div>
+                                    <div id="geoAddr"></div>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +291,17 @@
             </div>
     </main>
     <script>
-        // select option box
+        // select option box - 위치 이동 금지
+        $(".default_option_hour").click(function () {
+            $(this).parent().toggleClass("active");
+        })
+
+        $(".select_ul_hour li").click(function () {
+            var currentele = $(this).html();
+            $(".default_option_hour li").html(currentele);
+            $(this).parents(".select_wrap_hour").removeClass("active");
+        })
+
         $(".default_option").click(function () {
             $(this).parent().toggleClass("active");
         })
@@ -221,11 +312,119 @@
             $(this).parents(".select_wrap").removeClass("active");
         })
 
-        function sendBox() {
-            var box = $(".default_option li div p").html();
-            var ts = $(".default_option li div").attr('id');
-            console.log(box);
-            console.log(ts);
+        // 보호요청 진행상황 이벤트 - 위치 이동 금지
+        $(".guardSqure").click(function () {
+            $(this).siblings().removeClass("gd-active");
+            $(this).toggleClass("gd-active");
+
+            // userSendSOS_help로 선택한 보호자 데이터 전달
+            var gdTitle = $(this).children().eq(0).text();
+            var gdName = $(this).children().eq(1).text();
+            console.log(gdTitle);
+            console.log(gdName);
+
+            document.getElementById('userSendSOS_help').innerHTML = gdTitle + " 보호자 " +
+                "&nbsp;<p style='color: #ABA4FE;'>" + gdName + "</p>" + " 님에게 보호 요청 중입니다!";
+
+            // 활성화 된 보호자가 없으면 요청상황 텍스트 원상태로
+            if ($(this).parent().children().hasClass("gd-active") === false) {
+                console.log('false - if문 진입');
+                document.getElementById('userSendSOS_help').innerHTML = "보호요청 대기중입니다.";
+            }
+        })
+    </script>
+    <!-- kakaoMAP API - 위치 이동 금지 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=34c44a1aa6752f5cfbf2e8ac447c3c4d&libraries=services">
+    </script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 6 // 지도의 확대 레벨 
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var locPosition;
+
+        // 주소-좌표 변환 객체를 생성합니다
+        var geocoder = new kakao.maps.services.Geocoder();
+
+        // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
+        if (navigator.geolocation) {
+
+            // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var lat = position.coords.latitude, // 위도
+                    lon = position.coords.longitude; // 경도
+
+                locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                    message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+
+                // 마커와 인포윈도우를 표시합니다
+                displayMarker(locPosition, message);
+            });
+
+        } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+
+            var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),
+                message = 'geolocation을 사용할수 없어요..'
+
+            displayMarker(locPosition, message);
+        }
+
+        $('.modal').on('shown.bs.modal', function () {
+            map.relayout();
+            map.setCenter(locPosition);
+
+            searchDetailAddrFromCoords(locPosition, function (result, status) {
+                if (status === kakao.maps.services.Status.OK) {
+                    var detailAddr = !!result[0].road_address ? '<div>도로명주소 : ' + result[0].road_address
+                        .address_name + '</div>' : '';
+                    detailAddr += '<div>지번 주소 : ' + result[0].address.address_name + '</div>';
+
+                    var content = '<div class="bAddr">' + detailAddr + '</div>';
+
+                    // 맵 하단에 좌표 - 주소로 변환한 값을 출력
+                    document.getElementById('geoAddr').innerHTML = content;
+                }
+            });
+        });
+
+        // 좌표로 행정동 주소 정보를 요청합니다
+        function searchAddrFromCoords(coords, callback) {
+            geocoder.coord2RegionCode(coords.getLng(), coords.getLat(), callback);
+        }
+
+        // 좌표로 법정동 상세 주소 정보를 요청합니다
+        function searchDetailAddrFromCoords(coords, callback) {
+            geocoder.coord2Address(coords.getLng(), coords.getLat(), callback);
+        }
+
+        // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+        function displayMarker(locPosition, message) {
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                map: map,
+                position: locPosition
+            });
+
+            var iwContent = message, // 인포윈도우에 표시할 내용
+                iwRemoveable = true;
+
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                content: iwContent,
+                removable: iwRemoveable
+            });
+
+            // 인포윈도우를 마커위에 표시합니다 
+            infowindow.open(map, marker);
+
+            // 지도 중심좌표를 접속위치로 변경합니다
+            map.setCenter(locPosition);
         }
     </script>
 </body>

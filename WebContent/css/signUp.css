@@ -1,0 +1,181 @@
+#container {
+	width: 100%;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	background-color: #F4F3F8;
+}
+
+.signUp_section {
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	margin: 100px;
+}
+
+.chkId-container {
+	display: flex;
+}
+
+#checkIdBtn {
+	min-width: 100px;
+	margin-left: 10px;
+	background-color: #c1b2fb;
+	color : white;
+	text-align: center;
+	justify-content: center;
+	border: 0;
+	font-size: 13px;
+}
+
+#checkIdBtn:hover {
+	background-color: #ad9bec;
+    border-color: #ad9bec;
+}
+
+#signUpBtn {
+	background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+	color: white;
+	text-align: center;
+	justify-content: center;
+	border: 0;
+}
+
+.login-wrap {
+	width: 100%;
+}
+
+.login-wrap h3 {
+	font-weight: 400;
+	margin-bottom: 34px;
+}
+
+.login-wrap .icon {
+	background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+	margin-bottom: 50px;
+}
+
+.login-wrap p {
+	font-size: 14px;
+}
+
+.form-control {
+	height: 45px;
+}
+
+.form-group label {
+	font-size: 13px;
+	color: #b8aaed;
+}
+
+.toSignIn {
+	color: #b8aaed;
+}
+
+.form-group.mb-3.genderRadio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-group.mb-3.genderRadio label {
+	color: #888;
+}
+
+.genderRadioBtn {
+	width: 18px;
+	height: 20px;
+}
+
+.birthdayInput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.birthdayInput span {
+	color: #888;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 10px;
+}
+
+.field-icon {
+	cursor: pointer;
+}
+
+/* ================================================== 소셜 회원가입 button ================================================== */
+.indexSocial {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	padding: 18px;
+}
+
+.indexSocialBtn img {
+	width: 45px;
+	height: 45px;
+	margin: 10px 16px 10px 16px;
+}
+
+.indexSocialBtn p {
+	font-size: 12px;
+	text-align: center;
+}
+
+.indexSocial a {
+	text-align: center;
+}
+
+/* ========================= @media CSS ========================= */
+@media screen and (max-width : 1024px) {
+	.signUp_section {
+		width: 580px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		margin: 50px 10px 80px 10px;
+	}
+}
+
+@media screen and (max-width : 768px) {
+	.signUp_section {
+		width: 580px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+	.login-wrap {
+		width: 100%;
+		padding: 28px 35px 28px 35px;
+	}
+	.login-wrap .icon {
+		width: 70px;
+		height: 70px;
+		margin-bottom: 30px;
+	}
+	.login-wrap .icon span {
+		font: normal normal normal 25px/1 FontAwesome;
+	}
+	.service_title {
+		font-size: 22px;
+		margin: 20px 0px 50px 0px;
+	}
+	.form-control {
+		height: 40px;
+		font-size: 13px;
+	}
+	.form-agree label {
+		font-size: 15px;
+		font-weight: 400;
+		color: #191919;
+	}
+	.login-wrap p {
+		font-size: 13px;
+	}
+}

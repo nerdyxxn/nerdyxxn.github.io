@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+
+    <form action="" name="frm">
+        <div align="left">
+            <strong>라면 타이머</strong>
+            <br><br>
+            <!-- id와 name 같은이름 사용가능 -->
+            <select id="selid" name="selid">
+                <option value="180">시간 선택(기본:3분)</option>
+                <option value="300">5분</option>
+                <option value="180">3분</option>
+                <option value="120">2분</option>
+                <option value="60">1분</option>
+                <option value="30">30초</option>
+            </select>
+
+            <input type="button" value="Timer Start" onclick="noodle()">
+            <br><br>
+
+            <!-- CSS 묶을 때 많이 사용한다 -->
+            <span id="countdown">time selected</span>
+            <br><br>
+
+            <button type="button" onclick="window.close()">close</button>
+
+        </div>
+    </form>
+    <script type="text/javascript">
+        let index = 0; // 다른 함수에서도 사용하기 위해 
+        let value = 0;
+        let time = 0;
+
+        function noodle() {
+            clearInterval(time); // timer 초기화
+            index = document.frm.selid.selectedIndex; // index 번호를 가져온다.
+            value = parseInt(document.frm.selid.options[index].value);
+            time = setInterval('noodleTimer()', 1000); // 1초마다 noodleTimer()함수 호출
+        }
+
+        function noodleTimer() {
+            value = value - 1; // 1씩 빼나가도록 한다.
+            // 1초마다 실행
+            document.getElementById('countdown').innerHTML = "완료까지 <b>" + value + "</b>초 남았습니다";
+
+            if (value == 0) {
+                clearInterval(time);
+
+                let audio = new Audio('AlarmClockBell.wav');
+                audio.play();
+            }
+        }
+    </script>
+</body>
+
+</html>

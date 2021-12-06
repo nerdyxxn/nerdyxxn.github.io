@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .span_comm {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 11px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var timer;
+            //시작
+            $('#btn_start').click(function () {
+                timer = setInterval(function () {
+                    var timer_sec = Number($("#span_sec").val());
+                    $("#span_sec").text(timer_sec - 1);
+                }, 1000);
+            });
+
+            //중지
+            $('#btn_pause').click(function () {
+                clearInterval(timer);
+            });
+
+            //초기화
+            $('#btn_clear').click(function () {
+                $("#span_sec").text(0);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <input type="button" id="btn_start" value="시작">
+    <input type="button" id="btn_pause" value="중지">
+    <input type="button" id="btn_clear" value="초기화">
+    <br>
+    <span class="span_comm">초 : </span><input type="text" class="span_comm" id="span_sec">
+</body>
+
+</html>

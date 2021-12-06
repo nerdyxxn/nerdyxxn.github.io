@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ViewTimer {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 11px;
+        }
+    </style>
+    <script>
+        // ver 1. ********************************************************************
+        var time = 300; //기준시간 작성
+        var min = ""; //분
+        var sec = ""; //초
+
+        //setInterval(함수, 시간) : 주기적인 실행
+        var x = setInterval(function () {
+            //parseInt() : 정수를 반환
+            min = parseInt(time / 60); //몫을 계산
+            sec = time % 60; //나머지를 계산
+
+            document.getElementById("demo").innerHTML = min + "분" + sec + "초";
+            time--;
+
+            //타임아웃 시
+            if (time < 0) {
+                clearInterval(x); //setInterval() 실행을 끝냄
+                document.getElementById("demo").innerHTML = "시간초과";
+            }
+        }, 1000);
+
+
+        //ver 2. ********************************************************************
+        var SetTime = 300; // 최초 설정 시간(기본 : 초)
+        function msg_time() { // 1초씩 카운트      
+            m = Math.floor(SetTime / 60) + "분 " + (SetTime % 60) + "초"; // 남은 시간 계산         
+            var msg = "현재 남은 시간은 <font color='blue'>" + m + "</font> 입니다.";
+            document.all.ViewTimer.innerHTML = msg; // div 영역에 보여줌                  
+            SetTime--; // 1초씩 감소
+            if (SetTime < 0) { // 시간이 종료 되었으면..        
+                clearInterval(tid); // 타이머 해제
+                alert("종료");
+
+            }
+        }
+        window.onload = function TimerStart() {
+            tid = setInterval('msg_time()', 1000)
+        };
+    </script>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="ViewTimer"></div>
+</body>
+
+</html>

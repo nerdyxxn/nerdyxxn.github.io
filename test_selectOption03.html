@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v9/CcKI4k9un7TZVWzRVT-T8_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(https://fonts.gstatic.com/s/raleway/v9/CcKI4k9un7TZVWzRVT-T8xsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaIxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+        }
+
+        form {
+            width: 250px;
+            margin: 100px auto;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #nights {
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            -webkit-align-items: center;
+            justify-content: flex-end;
+            -webkit-justify-content: flex-end;
+            cursor: pointer;
+            height: 36px;
+            width: 233px;
+            background-color: #f4f5fb;
+            border: 1px solid #dcdff0;
+            text-align: right;
+            padding-right: 15px;
+            margin-top: 16px;
+            line-height: 36px;
+            color: #8d90a2;
+            font-size: 12px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        .select {
+            font-size: 20px !important;
+            color: #071933;
+            transition: color .2s ease-in-out;
+            -webkit-transition: color .2s ease-in-out;
+        }
+
+        #nights:hover>.select {
+            color: #dfbe65;
+        }
+
+        .select_text {
+            padding-right: 13px;
+        }
+
+        ul#night_option {
+            width: 250px;
+            background-color: #545963;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: absolute;
+            z-index: 10;
+            display: none;
+        }
+
+        ul#night_option li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            width: 220px;
+            list-style: none;
+            color: #fff;
+            text-align: right;
+            transition: background-color .2s ease-in-out;
+            -webkit-transition: background-color .2s ease-in-out;
+            cursor: pointer;
+        }
+
+        ul#night_option li:hover {
+            background-color: #3a3f49;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <select id="nightselect" name="nights">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div id="nights">
+            <div class="select_text">select option</div>
+            <div class="select fa fa-angle-down"></div>
+        </div>
+        <ul id="night_option">
+            <li class="option" id="1">1</li>
+            <li class="option" id="2">2</li>
+            <li class="option" id="3">3</li>
+            <li class="option" id="4">4</li>
+            <li class="option" id="5">5</li>
+        </ul>
+    </form>
+    <script>
+        $('#nights').click(function () {
+            $('#night_option').toggle();
+        })
+
+        $('.option').click(function () {
+            $('.select_text').html($(this).attr('id'));
+            $('#nightselect option[value=' + $(this).attr('id') + ']').prop('selected', true);
+            $('#night_option').toggle();
+        })
+    </script>
+</body>
+
+</html>

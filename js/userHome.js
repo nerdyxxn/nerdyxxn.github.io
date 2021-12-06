@@ -85,8 +85,16 @@ function timer() {
 
     document.getElementById('countdown').innerHTML = hour + "시간" + min + "분" + sec + "초 남았습니다!";
 
+    if (per == 25) {
+        document.getElementById("startToHalfPoint").style.backgroundColor = "#b8aaed";
+    }
+
     if (per == 50) {
         document.getElementById("halfPoint").style.backgroundColor = "#b8aaed";
+    }
+
+    if (per == 75) {
+        document.getElementById("halfToEndPoint").style.backgroundColor = "#b8aaed";
     }
 
     if (valueTotal == 0) {
@@ -104,7 +112,9 @@ function timeReset() {
     per = 0;
     document.getElementById("myBar").style.width = "0%";
     document.getElementById('myBar').classList.remove("active");
+    document.getElementById("startToHalfPoint").style.backgroundColor = "#fff";
     document.getElementById("halfPoint").style.backgroundColor = "#fff";
+    document.getElementById("halfToEndPoint").style.backgroundColor = "#fff";
     document.getElementById("endPoint").style.backgroundColor = "#fff";
     document.getElementById('countdown').innerHTML = "";
     document.getElementById('maxValue').innerHTML = "";

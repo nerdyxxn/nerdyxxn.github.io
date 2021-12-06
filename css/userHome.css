@@ -191,7 +191,6 @@ body {
     height: 100px;
     background-color: #000;
     color: #fff;
-    font-size: 35px;
     border: 0;
     display: flex;
     flex-direction: column;
@@ -200,8 +199,9 @@ body {
     flex-shrink: 0;
 }
 
-.callGuard i {
-    transform: rotate(-30deg);
+.callGuard img {
+    width: 40px;
+    height: 40px;
 }
 
 .guardItems {
@@ -216,7 +216,7 @@ body {
     height: 80px;
     border: 0;
     border-radius: 50%;
-    background: url('/img/icon/safeSqure.png');
+    background: url('../img/icon/safeSqure.png');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,7 +224,7 @@ body {
 }
 
 .guardSqure.gd-active {
-    background: url('/img/icon/safeSqureActive.png');
+    background: url('../img/icon/safeSqureActive.png');
 }
 
 .guardSqure.gd-active .guardSqureTitle {
@@ -288,7 +288,31 @@ body {
     z-index: 2;
 }
 
+#startToHalfPoint {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+    z-index: 2;
+}
+
 #halfPoint {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all .1s ease-in-out;
+    z-index: 2;
+}
+
+#halfToEndPoint {
     content: "";
     display: block;
     width: 19px;

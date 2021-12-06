@@ -56,7 +56,8 @@ main {
 }
 
 aside {
-  width: 350px;
+  width: 320px;
+  top: 0;
   right: 0;
   z-index: 1001;
   position: fixed;
@@ -66,11 +67,11 @@ aside {
   color: #fff;
   background: linear-gradient(0.45turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
 
-  -webkit-transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 1s transform cubic-bezier(0.23, 1, 0.32, 1), 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: 0.5s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.5s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: 0.5s transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.5s transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 0.5s transform cubic-bezier(0.23, 1, 0.32, 1), 1s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .show-sidebar aside {
@@ -234,7 +235,7 @@ main .post-content .post-meta {
 }
 
 .sidebar-item {
-  padding: 20px 50px 20px 20px;
+  padding: 20px 30px 20px 20px;
   text-align: right;
 }
 
@@ -242,14 +243,16 @@ main .post-content .post-meta {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 24px;
+  margin: 15px;
   padding: 20px 0px 20px 20px;
   border-bottom: 1px solid black;
 }
 
 .slideLogo>a>img {
-  width: 178px;
-  height: 72px;
+  /* width: 178px;
+  height: 72px; */
+  width: 150px;
+  height: 61px;
 }
 
 
@@ -263,7 +266,7 @@ main .post-content .post-meta {
 
 @media screen and (max-width : 768px) {
   aside {
-    width: 70%;
+    width: 65%;
   }
 
   .menu-toggle span {

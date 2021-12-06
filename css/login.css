@@ -1,0 +1,194 @@
+body {
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #F4F3F8;
+}
+
+.index_section {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.indexInput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+
+.indexInput>form {
+    width: 100%;
+}
+
+.logo {
+    margin: 90px auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.logo>a>img {
+    width: 90%;
+}
+
+.indexInput_items {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-bottom: 25px;
+    color: #5c5c5c;
+}
+
+.indexPwId {
+    font-size: 14px;
+}
+
+
+/* ================================================== login button ================================================== */
+#buttonLogin {
+    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    width: 98%;
+    height: 56px;
+    box-shadow: 5px 7px 7px rgb(0 0 0 / 10%);
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-family: Noto Sans KR;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* ================================================== input text CSS ================================================== */
+.field {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.field:nth-child(2) {
+    margin-top: 20px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 25px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #F4F3F8;
+    color: #595959;
+    border-radius: 25px;
+
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+    -webkit-appearance: none;
+    -moz-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+    -webkit-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus {
+    box-shadow: inset 1px 1px 2px #BABECC,
+        inset -1px -1px 2px #ffffff73;
+}
+
+.field p {
+    width: 30px;
+    color: #595959;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px;
+    pointer-events: none;
+    color: #666666;
+    font-size: 15px;
+}
+
+.field input:valid~label {
+    opacity: 0;
+}
+
+
+/* ================================================== 소셜 회원가입 button ================================================== */
+.indexSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 25px 18px 18px 18px;
+}
+
+.indexSocialBtn img {
+    width: 45px;
+    height: 45px;
+    margin: 10px 16px 10px 16px;
+}
+
+.indexSocialBtn p {
+    font-size: 13px;
+    text-align: center;
+}
+
+.indexSocial a {
+    text-align: center;
+}
+
+
+/* ================================================== @media CSS ================================================== */
+@media screen and (max-width : 1024px) {
+    .index_section {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    
+    .logo>a>img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .logo {
+        margin: 25px 0px 70px 0px;
+        text-align: center;
+    }
+
+    .index_section {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .field input {
+        font-size: 16px;
+    }
+
+    .inputLogin {
+        font-size: 14px;
+    }
+}

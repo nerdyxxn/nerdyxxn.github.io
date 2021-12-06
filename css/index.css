@@ -1,194 +1,705 @@
 body {
-    height: 100vh;
-}
-
-#container {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    background-color: #fff;
     display: flex;
-    justify-content: center;
-    background-color: #F4F3F8;
-}
-
-.index_section {
-    width: 400px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
 }
 
-.indexInput {
+/* ========================= Navbar ========================= */
+.navbar {
     width: 100%;
+    background-color: #fff !important;
+    font-weight: 600;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    margin-bottom: 30px;
+    padding: 0;
 }
 
-.indexInput>form {
-    width: 100%;
-}
-
-.logo {
-    margin: 90px auto;
-    margin-top: 25px;
-    text-align: center;
-}
-
-.logo>a>img {
-    width: 90%;
-}
-
-.indexInput_items {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    margin-bottom: 25px;
-    color: #5c5c5c;
-}
-
-.indexPwId {
-    font-size: 14px;
-}
-
-
-/* ================================================== login button ================================================== */
-#buttonLogin {
-    background: linear-gradient(0.25turn, #c0defb, #c1cdf8, #c1b2fb, #b8aaed, #de93d1);
-    color: #fff;
-    border: 0;
-    border-radius: 30px;
-    width: 98%;
-    height: 56px;
-    box-shadow: 5px 7px 7px rgb(0 0 0 / 10%);
-    margin-bottom: 40px;
-    cursor: pointer;
-    font-family: Noto Sans KR;
-    font-size: 17px;
+.navbar-nav {
     font-weight: 500;
 }
 
-/* ================================================== input text CSS ================================================== */
-.field {
-    height: 50px;
-    width: 100%;
+.navbar-content {
+    width: 1130px;
+    height: 73px;
     display: flex;
-    position: relative;
     align-items: center;
 }
 
-.field:nth-child(2) {
-    margin-top: 20px;
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
 }
 
-.field input {
-    height: 100%;
-    width: 100%;
-    padding-left: 25px;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    background: #F4F3F8;
-    color: #595959;
-    border-radius: 25px;
-
-    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
-    -webkit-appearance: none;
-    -moz-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
-    -webkit-box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #ffffff73;
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 8px 17px;
 }
 
-.field input:focus {
-    box-shadow: inset 1px 1px 2px #BABECC,
-        inset -1px -1px 2px #ffffff73;
+.nav-item.dropdown > .nav-link {
+    padding-right: 0;
 }
 
-.field p {
-    width: 30px;
-    color: #595959;
-    line-height: 50px;
-    margin-right: 20px;
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    margin: 0px 17px;
 }
 
-.field label {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 70px;
-    pointer-events: none;
-    color: #666666;
-    font-size: 15px;
-}
-
-.field input:valid~label {
-    opacity: 0;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #b8aaed;
 }
 
 
-/* ================================================== 소셜 회원가입 button ================================================== */
-.indexSocial {
+/* ========================= 공통 contaniner ========================= */
+#contaniner {
+    width: 1300px;
+    overflow-x: hidden;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: #fff;
+    flex-flow: column;
+    align-items: center;
+}
+
+.blank_top {
+    height: 58px;
+}
+
+#ipuPop {
+    /* width: 1128px; */
+    width: 87%;
+    height: 106px;
+    background: #FCECE4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ipuPop_title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 80px;
+}
+
+.ipuPop_title p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ipuPopClose {
+    position: absolute;
+    top: 8px;
+    right: 13px;
+}
+
+/* ========================= section 1 ========================= */
+.main_section01 {
     width: 100%;
-    padding: 25px 18px 18px 18px;
+    padding-top: 92px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.indexSocialBtn img {
-    width: 45px;
-    height: 45px;
-    margin: 10px 16px 10px 16px;
+.section01_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 136px;
+    margin-bottom: 200px;
 }
 
-.indexSocialBtn p {
-    font-size: 13px;
+.section01_title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.section01_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 60px;
+}
+
+#useIpuBtn {
+    width: 250px;
+    height: 55px;
+    background: #9D90FE;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    transition: .3s;
+}
+
+#useIpuBtn:hover {
+    opacity: 0.8;
+}
+
+.section01_img {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 159px;
+}
+
+
+/* ========================= section 2 ========================= */
+.main_section02 {
+    background-color: #F8F7FF;
+    width: 100%;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section02_title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
     text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 80px;
 }
 
-.indexSocial a {
-    text-align: center;
+.section02_img {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 135%;
+}
+
+.section02_img_title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.section02_img01 {
+    background: url('../img/main_section02_01.png');
+    width: 330px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.section02_img02 {
+    background: url('../img/main_section02_02.png');
+    width: 330px;
+    height: 330px;
+    margin: 0 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 45px;
+}
+
+.section02_img03 {
+    background: url('../img/main_section02_03.png');
+    width: 330px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 45px;
 }
 
 
-/* ================================================== @media CSS ================================================== */
+/* ========================= section 3 ========================= */
+.main_section03 {
+    width: 100%;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section03_title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+}
+
+.section03_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 55px;
+}
+
+#buyIpuBtn {
+    width: 135px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #AAAAAA;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 36px;
+}
+
+
+/* ========================= section 4 ========================= */
+.main_section04 {
+    background-color: #F8F7FF;
+    background: url('../img/main_section04_01.png') no-repeat center bottom 10% #F8F7FF;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section04_title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-top: 64px;
+}
+
+.section04_subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-top: 8px;
+}
+
+#shareIpuBtn {
+    width: 135px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #AAAAAA;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 34px;
+}
+
+#shareIpuBtn i {
+    padding-right: 9px;
+}
+
+.blank_section {
+    height: 120px;
+}
+
+
+/* ========================= section 5 ========================= */
+#main_section05 {
+    height: 100px;
+    background: #7B69FF;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+}
+
+#main_section05.show {
+    opacity: 1;
+    display: flex;
+    width: 1300px;
+    bottom: 0;
+}
+
+.mainBtn {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 43px;
+    transition: .3s;
+}
+
+.mainBtn:first-child {
+    border-right: 1px solid #fff;
+}
+
+.mainBtn:hover {
+    color: #fff;
+}
+
+/* ========================= @media CSS ========================= */
 @media screen and (max-width : 1024px) {
-    .index_section {
-        width: 350px;
+    .navbar-content {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 80px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.3em;
+        height: 1.3em;
+    }
+
+    #contaniner {
+        width: 100%;
+    }
+
+    /* ======== section 1 ======== */
+    .section01_content {
+        margin-left: 75px;
+    }
+
+    .section01_title {
+        font-size: 32px;
+    }
+
+    .section01_subtitle {
+        font-size: 18px;
+    }
+
+    .section01_img {
+        margin-right: 79px;
+    }
+
+    .section01_img>img {
+        width: 360px;
+        height: 375px;
+    }
+
+
+    /* ======== section 2 ======== */
+    .section02_title {
+        font-size: 30px;
+    }
+
+    .section02_img {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-flow: column;
+        font-size: 16px;
+        line-height: 135%;
     }
-    
-    .logo>a>img {
-        width: 85%;
+
+    .section02_img_title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 22px;
+    }
+
+    .section02_img01 {
+        background: url('../img/main_section02_01.png') no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 300px;
+        padding-bottom: 35px;
+    }
+
+    .section02_img02 {
+        background: url('../img/main_section02_02.png') no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 300px;
+        padding-bottom: 35px;
+    }
+
+    .section02_img03 {
+        background: url('../img/main_section02_03.png') no-repeat;
+        background-size: contain;
+        width: 300px;
+        height: 300px;
+        padding-bottom: 35px;
+    }
+
+
+    /* ======== section 3 ======== */
+    .main_section03 {
+        width: 100%;
+        height: 645px;
+    }
+
+    .section03_title {
+        font-size: 30px;
+    }
+
+    .section03_subtitle {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .section03_img>img {
+        width: 600px;
+        height: 373px;
+    }
+
+
+    /* ======== section 5 ======== */
+    .blank_section {
+        height: 100px;
+    }
+
+    #main_section05.show {
+        opacity: 1;
+        display: flex;
+        width: 100%;
+        bottom: 0;
     }
 }
+
 
 @media screen and (max-width : 768px) {
-    .logo {
-        margin: 25px 0px 70px 0px;
-        text-align: center;
+    .navbar {
+        border-bottom: 1px solid #CCCCCC;
     }
 
-    .index_section {
-        width: 300px;
+    .navbar-content {
+        height: 51px;
+        margin: 0 5px 0 20px;
+    }
+
+    #ipuPop {
+        height: 70px;
+        justify-content: space-between;
+    }
+
+    .ipuPop_title {
+        font-size: 11px;
+        line-height: 12px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+
+    .ipuPop_title p:first-child {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .ipuPopClose {
+        position: absolute;
+        top: 8px;
+        right: 13px;
+    }
+
+    .ipuPop_img>img {
+        width: 120px;
+        margin-top: 20px;
+    }
+
+
+    /* ======== section 1 ======== */
+    .main_section01 {
+        position: relative;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .section01_content {
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .section01_title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .section01_title p {
         display: flex;
+        flex-direction: column;
+    }
+
+    .section01_subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 0px;
+    }
+
+    .section01_img {
+        flex-direction: row-reverse;
+        margin-right: 25px;
+        margin-bottom: 89px;
+    }
+
+    .section01_img>img {
+        width: 232px;
+        height: 243px;
+        margin-top: -45px;
+    }
+
+    #useIpuBtn {
+        position: absolute;
+        bottom: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 313px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+
+    /* ======== section 2 ======== */
+    .main_section02 {
+        height: 490px;
+    }
+
+    .section02_title {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 42px;
+    }
+
+    .section02_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 15px;
+    }
+
+    .section02_img_title {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .section02_img01 {
+        background: url('../img/main_section02_01_m.png') no-repeat;
+        width: 310px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 0;
+        padding-left: 115px;
+    }
+
+    .section02_img02 {
+        background: url('../img/main_section02_02_m.png') no-repeat;
+        width: 310px;
+        height: 90px;
+        margin: 12px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 0;
+        padding-left: 115px;
+    }
+
+    .section02_img03 {
+        background: url('../img/main_section02_03_m.png') no-repeat;
+        width: 310px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 0;
+        padding-left: 115px;
+    }
+
+
+    /* ======== section 3 ======== */
+    .main_section03 {
+        height: 400px;
+    }
+
+    .section03_title {
+        font-size: 22px;
+    }
+
+    .section03_title p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section03_subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    #buyIpuBtn {
+        width: 82px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 14px;
+        margin-bottom: 30px;
+    }
+
+    .section03_img>img {
+        width: 300px;
+        height: 186px;
+    }
+
+
+    /* ======== section 4 ======== */
+    .main_section04 {
+        background-color: #F8F7FF;
+        background: url('../img/main_section04_01_m.png') no-repeat center bottom 6% #F8F7FF;
+        width: 100%;
+        height: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section04_title {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 42px;
+    }
+
+    .section04_subtitle {
+        font-size: 24px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+
+    #shareIpuBtn {
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+        line-height: 14px;
+        margin-top: 30px;
+    }
+
+    #shareIpuBtn i {
+        padding-right: 7px;
+    }
+
+    .blank_section {
+        height: 65px;
+    }
+
+
+    /* ======== section 5 ======== */
+    #main_section05 {
+        height: 65px;
+        background: #7B69FF;
+        font-size: 14px;
+        font-weight: 500;
         justify-content: center;
         align-items: center;
-        flex-flow: column;
-    }
-
-    .field input {
-        font-size: 16px;
-    }
-
-    .inputLogin {
-        font-size: 14px;
+        position: fixed;
+        display: none;
     }
 }
+
+
+@media screen and (max-width : 425px) {}

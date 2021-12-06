@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +29,6 @@
     <link rel="stylesheet" type="text/css" href="css/userHome.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- JS -->
-    <script src="js/popper.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/userHome.js"></script>
 </head>
@@ -58,7 +56,7 @@
                     <span class="icon-align-right"></span>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="IPU" /></a>
+                    <a href="index.jsp"><img src="img/logo.png" alt="IPU" /></a>
                 </div>
                 <div class="toggle">
                     <button class="js-menu-toggle menu-toggle">
@@ -176,7 +174,9 @@
                                     <div id="myProgress">
                                         <ul class="progress_point">
                                             <li id="startPoint"></li>
+                                            <li id="startToHalfPoint"></li>
                                             <li id="halfPoint"></li>
+                                            <li id="halfToEndPoint"></li>
                                             <li id="endPoint"></li>
                                         </ul>
                                         <div id="myBar"></div>
@@ -196,28 +196,27 @@
                 </div>
                 <div class="userSendSOS">
                     <button class="callGuard" onclick="">
-                        <!-- <i class="fas fa-bell"></i> -->
-                        <i class="fas fa-phone-volume"></i>
+                        <img src="img/icon/ico_siren.png">
                     </button>
                     <div class="guardItems">
-                        <button class="guardSqure" id="guard01">
-                            <div class="guardSqureTitle">1순위</div>
+                        <button class="guardSqure" id="guard01" onclick="location.href='tel:02-1234-5678'">
+                            <div class="guardSqureTitle">Call</div>
                             <div class="guardSqureName">엄마</div>
                         </button>
-                        <button class="guardSqure" id="guard02">
-                            <div class="guardSqureTitle">2순위</div>
+                        <button class="guardSqure" id="guard02" onclick="location.href='tel:02-1234-5678'">
+                            <div class="guardSqureTitle">Call</div>
                             <div class="guardSqureName">아빠</div>
                         </button>
-                        <button class="guardSqure" id="guard03">
-                            <div class="guardSqureTitle">3순위</div>
+                        <button class="guardSqure" id="guard03" onclick="location.href='tel:02-1234-5678'">
+                            <div class="guardSqureTitle">Call</div>
                             <div class="guardSqureName">언니</div>
                         </button>
-                        <button class="guardSqure" id="guard04">
-                            <div class="guardSqureTitle">4순위</div>
+                        <button class="guardSqure" id="guard04" onclick="location.href='tel:02-1234-5678'">
+                            <div class="guardSqureTitle">Call</div>
                             <div class="guardSqureName">엄마</div>
                         </button>
-                        <button class="guardSqure" id="guard05">
-                            <div class="guardSqureTitle">5순위</div>
+                        <button class="guardSqure" id="guard05" onclick="location.href='tel:02-1234-5678'">
+                            <div class="guardSqureTitle">Call</div>
                             <div class="guardSqureName">동생</div>
                         </button>
                     </div>
@@ -291,6 +290,7 @@
                     </div>
                 </div>
             </div>
+		</div>
     </main>
     <script>
         // select option box - 위치 이동 금지
@@ -442,5 +442,4 @@
         }
     </script>
 </body>
-
 </html>

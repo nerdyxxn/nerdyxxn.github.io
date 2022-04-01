@@ -1,0 +1,112 @@
+/* RESET STYLES - story
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+/* HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.clearfixHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAV STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fp-viewing-firstSection .header-top {
+    height: 70px;
+    /* padding: 0 250px; */
+    padding: 0 13%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fp-viewing-firstSection .header-top .l-left a {
+    padding-right: 40px;
+    color: #C4C4C4;
+}
+
+.fp-viewing-firstSection .header-top .l-left a:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.fp-viewing-firstSection .header-top .l-right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    color: #fff;
+}
+
+.fp-viewing-firstSection .header-top #header-logo {
+    color: #fff;
+    font-weight: 600;
+}
+
+.fp-viewing-firstSection .header-top .ico_store {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background: url("/img/ico_store.png") no-repeat;
+    margin-left: 10px;
+}
+
+.header-top {
+    height: 70px;
+    padding: 0 13%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    box-sizing: border-box;
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 15px;
+}
+
+.l-left a {
+    padding-right: 40px;
+    color: #C4C4C4;
+}
+
+.l-left a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+.l-right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    color: #000;
+}
+
+#header-logo {
+    color: #000;
+    font-weight: 600;
+}
+
+.ico_store {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background: url("/img/ico_store_bk.png") no-repeat;
+    margin-left: 10px;
+}

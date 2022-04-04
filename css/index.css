@@ -726,12 +726,169 @@ section {
 /* 미션 */
 .over-page .scroll-page .mission {
     background: #fff;
-    display: none;
+    display: flex;
     justify-content: center;
     height: 500px;
 }
 
-.mission.active {
+.mission-box {
+    display: flex;
+    justify-content: center;
+}
+
+.mission-title {
+    width: 400px;
+    font-weight: 800;
+    font-size: 55px;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.mission-title.active {
+    display: block !important;
+    transform: translate3d(0, 100px, 0);
+    animation: fadeUp 2s forwards;
+    -moz-animation: fadeUp 2s forwards;
+    -webkit-animation: fadeUp 2s forwards;
+    -o-animation: fadeUp 2s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-moz-keyframes fadeUp {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-o-keyframes fadeUp {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.mission-title p:first-child {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mission-title p:last-child {
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+.mission-info {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 17px;
+}
+
+.mission-info.active {
+    display: block !important;
+    transform: translate3d(0, 100px, 0);
+    animation: fadeUp 2s forwards;
+    -moz-animation: fadeUp 2s forwards;
+    -webkit-animation: fadeUp 2s forwards;
+    -o-animation: fadeUp 2s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-moz-keyframes fadeUp {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-o-keyframes fadeUp {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.over-page .scroll-page .mission-img {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 450px;
+}
+
+.mission-left-box {
+    display: none;
+}
+
+.mission-right-box {
+    display: none;
+}
+
+.mission-left-box.active {
     display: flex !important;
     transform: translate3d(0, 100px, 0);
     animation: fadeUp 3s forwards;
@@ -787,45 +944,65 @@ section {
     }
 }
 
-.mission-box {
-    display: flex;
-    justify-content: center;
+.mission-right-box.active {
+    display: flex !important;
+    transform: translate3d(0, 100px, 0);
+    animation: fadeUp 3s forwards;
+    -moz-animation: fadeUp 3s forwards;
+    -webkit-animation: fadeUp 3s forwards;
+    -o-animation: fadeUp 3s forwards;
 }
 
-.mission-title {
-    width: 400px;
-    font-weight: 800;
-    font-size: 55px;
-    text-align: left;
-    margin-right: 200px;
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
-.mission-title p:first-child {
-    font-weight: 500;
-    font-size: 20px;
+@-moz-keyframes fadeUp {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
-.mission-title p:last-child {
-    font-family: 'M PLUS 1', sans-serif;
+@-webkit-keyframes fadeUp {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
-.mission-info {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    text-align: left;
-    margin-top: 17px;
+@-o-keyframes fadeUp {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
-.over-page .scroll-page .mission-img {
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    padding-bottom: 450px;
+.right-mission-img {
+    width: 530px;
+    height: 300px;
 }
 
 .left-mission-img {

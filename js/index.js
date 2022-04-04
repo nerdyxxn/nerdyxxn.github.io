@@ -74,20 +74,22 @@ $(function () {
 
                     if (visionImgTop < 465) {
                         $(".right-img-box").addClass("mv");
-                        $(".inter-box").css('color', '#fff');
                     } else if (visionImgTop > 465) {
                         $(".right-img-box").removeClass("mv");
-                        $(".inter-box").css('color', '#000');
                     }
 
                     if (missionTitleTop < -250) {
-                        $(".mission").addClass("active");
+                        $(".mission-title").addClass("active");
+                        $(".mission-info").addClass("active");
+                    }
+                    
+                    if (missionTitleTop < -500) {
+                        $(".mission-left-box").addClass("active");
+                        $(".mission-right-box").addClass("active");
                     }
 
-                    if (missionLeftImgTop < 811) {
+                    if (missionTitleTop < -1100) {
                         $(".left-mission-img").addClass("mv");
-                    } else if (visionImgTop > 811) {
-                        $(".left-mission-img").removeClass("mv");
                     }
                 });
 

@@ -54,12 +54,40 @@ $(function () {
 
                 $(window).on("scroll", function (e) {
                     var wt = $("html").scrollTop() || $("body").scrollTop();
-                    console.log(wt);
+                    //console.log(wt);
                     if (wt == 0) {
                         $(".over-page").removeClass("active");
                     } else if (wt == 50000) {
                         //console.log("else문 진입");
                         //$(".over-page [data-aos]").addClass("aos-animate");
+                    }
+                    
+                    // 엘리먼트 위치값 가져오기
+                    const visionImg = document.querySelector('.left-img-box');
+                    const visionImgTop = visionImg.getBoundingClientRect().top;
+                    const missionLeftImg = document.querySelector('.left-mission-img');
+                    const missionLeftImgTop = missionLeftImg.getBoundingClientRect().top;
+                    const missionTitle = document.querySelector('.vision-img');
+                    const missionTitleTop = missionTitle.getBoundingClientRect().top;
+
+                    console.log(missionTitleTop);
+
+                    if (visionImgTop < 465) {
+                        $(".right-img-box").addClass("mv");
+                        $(".inter-box").css('color', '#fff');
+                    } else if (visionImgTop > 465) {
+                        $(".right-img-box").removeClass("mv");
+                        $(".inter-box").css('color', '#000');
+                    }
+
+                    if (missionTitleTop < -250) {
+                        $(".mission").addClass("active");
+                    }
+
+                    if (missionLeftImgTop < 811) {
+                        $(".left-mission-img").addClass("mv");
+                    } else if (visionImgTop > 811) {
+                        $(".left-mission-img").removeClass("mv");
                     }
                 });
 
@@ -89,6 +117,7 @@ $(function () {
                             overflow: "visible",
                         });
                         $(".over-page").addClass("active");
+                        $(".move-arrow").css('display', 'none');
                     }
                 });
                 window.addEventListener("touchstart", initTouch);
@@ -132,6 +161,7 @@ $(function () {
                         position: "fixed"
                     });
                     $(".over-page").addClass("active");
+                    $(".move-arrow").css('display', 'none');
                     $("html, body").css({
                         overflow: "visible"
                     });
@@ -552,7 +582,6 @@ $(function () {
             $(".select-text").removeClass("prev");
         }, 2500);
 
-        $(".prefix").html("을");
         var itemCheck = $(".depth-2 .filter-item.active").length;
         if (itemCheck <= 0) {
             $(".depth-1 .filter-item.active").removeClass("active");
@@ -560,4 +589,15 @@ $(function () {
         }
     });
 
+
+    // 메인 페이지 Top button (회원가입/로그인) 스크롤 이벤트
+    var topBtn = $('#main_section05');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 150) {
+            topBtn.addClass('show');
+        } else {
+            topBtn.removeClass('show');
+        }
+    });
 });

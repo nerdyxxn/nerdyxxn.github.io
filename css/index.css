@@ -265,7 +265,7 @@ section {
     color: #fff;
     font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 35px;
     text-shadow: 0 0.2em 0.4em rgb(0 0 0 / 30%);
     margin-right: 70px;
 }
@@ -274,7 +274,7 @@ section {
     font-size: 100px;
     font-weight: 800;
     line-height: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 
@@ -703,7 +703,7 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: center;
-    padding: 105px 0 400px 0;
+    padding: 105px 0 500px 0;
 }
 
 .left-img-box {
@@ -715,20 +715,76 @@ section {
 .right-img-box {
     width: 640px;
     height: 400px;
+    transition: all 2s ease;
+}
+
+.right-img-box.mv {
+    margin-top: -170px;
 }
 
 
 /* 미션 */
 .over-page .scroll-page .mission {
-    padding: 130px 0;
     background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    display: none;
     justify-content: center;
     height: 500px;
+}
+
+.mission.active {
+    display: flex !important;
+    transform: translate3d(0, 100px, 0);
+    animation: fadeUp 3s forwards;
+    -moz-animation: fadeUp 3s forwards;
+    -webkit-animation: fadeUp 3s forwards;
+    -o-animation: fadeUp 3s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-moz-keyframes fadeUp {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@-o-keyframes fadeUp {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
 
 .mission-box {
@@ -769,19 +825,21 @@ section {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: center;
-    padding: 105px 0 400px 0;
+    padding-bottom: 450px;
 }
 
 .left-mission-img {
     width: 630px;
     height: 420px;
     margin-right: 20px;
+    margin-top: 0;
+    transition: all 2s ease;
 }
 
-.right-mission-img {
-    width: 530px;
-    height: 300px;
+.left-mission-img.mv {
+    margin-top: -119px;
 }
+
 
 
 /* FOOTER STYLES
@@ -938,7 +996,6 @@ footer {
     display: none;
     width: 100%;
     padding: 0.5rem 0;
-    margin-top: 8px;
     font-size: 16px;
     color: #C4C4C4;
     background-color: #222;
